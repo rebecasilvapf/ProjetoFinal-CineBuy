@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "tbac5y3T4Es67MUUM+/5US0YMCdJ4zpcKPo/yfO5tk4=",
+  "Source": "ApiSistemaReservaIngressos",
+  "BasePath": "_content/ApiSistemaReservaIngressos",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

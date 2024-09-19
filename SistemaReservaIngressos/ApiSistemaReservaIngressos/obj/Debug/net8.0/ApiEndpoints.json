@@ -1,0 +1,413 @@
+[
+  {
+    "ContainingType": "ApiSistemaReservaIngressos.Controllers.AssentoController",
+    "Method": "AdicionarAssento",
+    "RelativePath": "api/Assento/AdicionarAssento",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "assentoRequest",
+        "Type": "ApiSistemaReservaIngressos.Models.AssentoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaReservaIngressos.Controllers.AssentoController",
+    "Method": "AlterarAssento",
+    "RelativePath": "api/Assento/AlterarAssento/{codigo}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "assentoRequest",
+        "Type": "ApiSistemaReservaIngressos.Models.AssentoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaReservaIngressos.Controllers.AssentoController",
+    "Method": "BuscarAssento",
+    "RelativePath": "api/Assento/BuscarAssento/{codigo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaReservaIngressos.Controllers.AssentoController",
+    "Method": "BuscarTodosAssentos",
+    "RelativePath": "api/Assento/BuscarTodosAssentos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaReservaIngressos.Controllers.AssentoController",
+    "Method": "ExcluirAssento",
+    "RelativePath": "api/Assento/ExcluirAssento/{codigo}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaReservaIngressos.Controllers.DetalhesReservaController",
+    "Method": "AdicionarDetalhesReserva",
+    "RelativePath": "api/DetalhesReserva/AdicionarDetalhesReserva",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "detalhesReservaRequest",
+        "Type": "ApiSistemaReservaIngressos.Models.DetalheReservaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaReservaIngressos.Controllers.DetalhesReservaController",
+    "Method": "AlterarDetalhesDaReserva",
+    "RelativePath": "api/DetalhesReserva/AlterarReserva/{codigo}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "detalhesReservaRequest",
+        "Type": "ApiSistemaReservaIngressos.Models.DetalheReservaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaReservaIngressos.Controllers.DetalhesReservaController",
+    "Method": "BuscarDetalheReserva",
+    "RelativePath": "api/DetalhesReserva/BuscarDetalheReserva/{codigo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaReservaIngressos.Controllers.DetalhesReservaController",
+    "Method": "BuscarTodosDetalhesReserva",
+    "RelativePath": "api/DetalhesReserva/BuscarTodosDetalhesReserva",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaReservaIngressos.Controllers.DetalhesReservaController",
+    "Method": "ExcluirDetalhesdaReserva",
+    "RelativePath": "api/DetalhesReserva/ExcluirDetalhesdaReserva/{codigo}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaReservaIngressos.Controllers.FilmeController",
+    "Method": "AdicionarFilme",
+    "RelativePath": "api/Filme/AdicionarFilme",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filmeRequest",
+        "Type": "ApiSistemaReservaIngressos.Models.FilmeRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaReservaIngressos.Controllers.FilmeController",
+    "Method": "AlterarFilme",
+    "RelativePath": "api/Filme/AlterarFilme/{codigo}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "filmeRequest",
+        "Type": "ApiSistemaReservaIngressos.Models.FilmeRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaReservaIngressos.Controllers.FilmeController",
+    "Method": "BuscarFilme",
+    "RelativePath": "api/Filme/BuscarFilme/{codigo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaReservaIngressos.Controllers.FilmeController",
+    "Method": "BuscarTodosFilmes",
+    "RelativePath": "api/Filme/BuscarTodosFilmes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaReservaIngressos.Controllers.FilmeController",
+    "Method": "ExcluirFilme",
+    "RelativePath": "api/Filme/ExcluirFilme/{codigo}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaReservaIngressos.Controllers.HorarioController",
+    "Method": "AdicionarHorario",
+    "RelativePath": "api/Horario/AdicionarHorario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "horarioRequest",
+        "Type": "ApiSistemaReservaIngressos.Models.HorarioRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaReservaIngressos.Controllers.HorarioController",
+    "Method": "AlterarHorario",
+    "RelativePath": "api/Horario/AlterarHorario/{codigo}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "horarioRequest",
+        "Type": "ApiSistemaReservaIngressos.Models.HorarioRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaReservaIngressos.Controllers.HorarioController",
+    "Method": "BuscarHorario",
+    "RelativePath": "api/Horario/BuscarHorario/{codigo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaReservaIngressos.Controllers.HorarioController",
+    "Method": "BuscarHorariosFilme",
+    "RelativePath": "api/Horario/BuscarHorariosFilme/{codigo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaReservaIngressos.Controllers.HorarioController",
+    "Method": "BuscarTodosHorarios",
+    "RelativePath": "api/Horario/BuscarTodosHorarios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaReservaIngressos.Controllers.HorarioController",
+    "Method": "ExcluirHorario",
+    "RelativePath": "api/Horario/ExcluirHorario/{codigo}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaReservaIngressos.Controllers.ReservaController",
+    "Method": "AdicionarReserva",
+    "RelativePath": "api/Reserva/AdicionarReserva",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reservaRequest",
+        "Type": "ApiSistemaReservaIngressos.Models.ReservaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaReservaIngressos.Controllers.ReservaController",
+    "Method": "AlterarReserva",
+    "RelativePath": "api/Reserva/AlterarReserva/{codigo}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "reservaRequest",
+        "Type": "ApiSistemaReservaIngressos.Models.ReservaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaReservaIngressos.Controllers.ReservaController",
+    "Method": "BuscarReserva",
+    "RelativePath": "api/Reserva/BuscarReserva/{codigo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaReservaIngressos.Controllers.ReservaController",
+    "Method": "BuscarTodasReservas",
+    "RelativePath": "api/Reserva/BuscarTodasReservas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaReservaIngressos.Controllers.ReservaController",
+    "Method": "ExcluirReserva",
+    "RelativePath": "api/Reserva/ExcluirReserva/{codigo}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
