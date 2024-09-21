@@ -1,6 +1,19 @@
-# Arquivos e diretórios do Visual Studio
+# Visual Studio
 .vs/
-*.user
 *.suo
-*.tmp
-*.log
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]eleases/
+[Ll]og/
+[Ll]ogs/
+*.dll
+*.pdb
+
+# NuGet
+*.nupkg
+*.snupkg
