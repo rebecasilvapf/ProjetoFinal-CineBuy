@@ -182,7 +182,8 @@
               "RelativeToolTip": "ApiSistemaReservaIngressos\\Services\\FilmeService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T04:11:36.734Z"
+              "WhenOpened": "2024-09-21T04:11:36.734Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -194,7 +195,8 @@
               "RelativeToolTip": "ApiSistemaReservaIngressos\\Repositories\\ReservaRepository.cs",
               "ViewState": "AgIAAFYAAAAAAAAAAAAQwFcAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T00:46:36.056Z"
+              "WhenOpened": "2024-09-21T00:46:36.056Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -204,9 +206,10 @@
               "RelativeDocumentMoniker": "ApiSistemaReservaIngressos\\Controllers\\AssentoController.cs",
               "ToolTip": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\ApiSistemaReservaIngressos\\Controllers\\AssentoController.cs",
               "RelativeToolTip": "ApiSistemaReservaIngressos\\Controllers\\AssentoController.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAA4wHEAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAcwHEAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T23:49:11.584Z"
+              "WhenOpened": "2024-09-20T23:49:11.584Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -231,7 +234,8 @@
               "RelativeToolTip": "SistemaReservaIngressos\\Views\\ComprarFilme.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-09-17T02:55:49.274Z"
+              "WhenOpened": "2024-09-17T02:55:49.274Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -243,7 +247,8 @@
               "RelativeToolTip": "ApiSistemaReservaIngressos\\Repositories\\HorarioRepository.cs",
               "ViewState": "AgIAAEMAAAAAAAAAAAAcwEkAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T02:16:31.758Z"
+              "WhenOpened": "2024-09-19T02:16:31.758Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -253,9 +258,10 @@
               "RelativeDocumentMoniker": "ApiSistemaReservaIngressos\\Services\\HorarioService.cs",
               "ToolTip": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\ApiSistemaReservaIngressos\\Services\\HorarioService.cs",
               "RelativeToolTip": "ApiSistemaReservaIngressos\\Services\\HorarioService.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAwwDMAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAA9wDMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T02:17:53.323Z"
+              "WhenOpened": "2024-09-19T02:17:53.323Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -267,7 +273,8 @@
               "RelativeToolTip": "ApiSistemaReservaIngressos\\Services\\ReservaService.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAIwD4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T23:34:20.74Z"
+              "WhenOpened": "2024-09-17T23:34:20.74Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -279,7 +286,8 @@
               "RelativeToolTip": "ApiSistemaReservaIngressos\\Controllers\\ReservaController.cs",
               "ViewState": "AgIAAEAAAAAAAAAAAAAgwFUAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T23:34:29.231Z"
+              "WhenOpened": "2024-09-17T23:34:29.231Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -291,7 +299,8 @@
               "RelativeToolTip": "SistemaReservaIngressos\\Global.asax.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T23:37:55.827Z"
+              "WhenOpened": "2024-09-16T23:37:55.827Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -303,7 +312,8 @@
               "RelativeToolTip": "ApiSistemaReservaIngressos\\Repositories\\AssentoRepository.cs",
               "ViewState": "AgIAAGEAAAAAAAAAAAAgwIEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T00:39:27.475Z"
+              "WhenOpened": "2024-09-21T00:39:27.475Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -315,7 +325,8 @@
               "RelativeToolTip": "ApiSistemaReservaIngressos\\Models\\Assentos.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T21:47:01.169Z"
+              "WhenOpened": "2024-09-19T21:47:01.169Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -327,7 +338,8 @@
               "RelativeToolTip": "SistemaReservaIngressos\\Models\\Filme.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T03:14:51.661Z"
+              "WhenOpened": "2024-09-17T03:14:51.661Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -339,7 +351,8 @@
               "RelativeToolTip": "SistemaReservaIngressos\\Views\\Filmes.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-09-19T00:44:19.655Z"
+              "WhenOpened": "2024-09-19T00:44:19.655Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -351,7 +364,8 @@
               "RelativeToolTip": "SistemaReservaIngressos\\Content\\styles.css",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAADkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-17T00:02:34.017Z"
+              "WhenOpened": "2024-09-17T00:02:34.017Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -363,7 +377,8 @@
               "RelativeToolTip": "ApiSistemaReservaIngressos\\Services\\AssentoService.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAcwDkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T23:05:35.005Z"
+              "WhenOpened": "2024-09-19T23:05:35.005Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -375,7 +390,8 @@
               "RelativeToolTip": "SistemaReservaIngressos\\Models\\AssentoRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T22:41:16.996Z"
+              "WhenOpened": "2024-09-19T22:41:16.996Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -387,7 +403,8 @@
               "RelativeToolTip": "SistemaReservaIngressos\\Models\\Assentos.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T00:50:50.668Z"
+              "WhenOpened": "2024-09-20T00:50:50.668Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -399,7 +416,8 @@
               "RelativeToolTip": "SistemaReservaIngressos\\Models\\ReservaRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T23:42:10.359Z"
+              "WhenOpened": "2024-09-19T23:42:10.359Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -411,7 +429,8 @@
               "RelativeToolTip": "ApiSistemaReservaIngressos\\Models\\ReservaRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T21:30:17.051Z"
+              "WhenOpened": "2024-09-19T21:30:17.051Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -423,7 +442,8 @@
               "RelativeToolTip": "ApiSistemaReservaIngressos\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-19T01:29:47.045Z"
+              "WhenOpened": "2024-09-19T01:29:47.045Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -435,7 +455,8 @@
               "RelativeToolTip": "ApiSistemaReservaIngressos\\Models\\Filmes.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T01:31:07.17Z"
+              "WhenOpened": "2024-09-19T01:31:07.17Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -447,7 +468,8 @@
               "RelativeToolTip": "ApiSistemaReservaIngressos\\Repositories\\FilmeRepository.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAIwEwAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T01:31:43.379Z"
+              "WhenOpened": "2024-09-19T01:31:43.379Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -459,7 +481,8 @@
               "RelativeToolTip": "ApiSistemaReservaIngressos\\Models\\FilmeRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T01:31:29.441Z"
+              "WhenOpened": "2024-09-19T01:31:29.441Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -471,7 +494,8 @@
               "RelativeToolTip": "ApiSistemaReservaIngressos\\Models\\Reservas.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T21:30:22.266Z"
+              "WhenOpened": "2024-09-19T21:30:22.266Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -483,7 +507,8 @@
               "RelativeToolTip": "SistemaReservaIngressos\\Site.Master.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T23:37:40.573Z"
+              "WhenOpened": "2024-09-16T23:37:40.573Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -508,7 +533,8 @@
               "RelativeToolTip": "ApiSistemaReservaIngressos\\Controllers\\FilmeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFcAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T01:34:13.42Z"
+              "WhenOpened": "2024-09-19T01:34:13.42Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -520,7 +546,8 @@
               "RelativeToolTip": "ApiSistemaReservaIngressos\\Models\\Horarios.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T02:08:40.527Z"
+              "WhenOpened": "2024-09-19T02:08:40.527Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -532,7 +559,8 @@
               "RelativeToolTip": "SistemaReservaIngressos\\Models\\Horario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T02:09:11.395Z"
+              "WhenOpened": "2024-09-19T02:09:11.395Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -544,7 +572,8 @@
               "RelativeToolTip": "ApiSistemaReservaIngressos\\Controllers\\HorarioController.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAowCIAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T02:18:22.444Z"
+              "WhenOpened": "2024-09-19T02:18:22.444Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -556,7 +585,8 @@
               "RelativeToolTip": "SistemaReservaIngressos\\Content\\bootstrap.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-16T23:56:48.626Z"
+              "WhenOpened": "2024-09-16T23:56:48.626Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -568,7 +598,8 @@
               "RelativeToolTip": "SistemaReservaIngressos\\Views\\Contact.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-09-16T23:53:29.331Z"
+              "WhenOpened": "2024-09-16T23:53:29.331Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -580,7 +611,8 @@
               "RelativeToolTip": "SistemaReservaIngressos\\Site.Master",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-09-16T23:35:17.459Z"
+              "WhenOpened": "2024-09-16T23:35:17.459Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -592,7 +624,8 @@
               "RelativeToolTip": "SistemaReservaIngressos\\Site.Mobile.Master.designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T23:38:22.747Z"
+              "WhenOpened": "2024-09-16T23:38:22.747Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -604,7 +637,8 @@
               "RelativeToolTip": "SistemaReservaIngressos\\Site.Mobile.Master.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T23:38:17.892Z"
+              "WhenOpened": "2024-09-16T23:38:17.892Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -616,7 +650,8 @@
               "RelativeToolTip": "SistemaReservaIngressos\\Content\\Site.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-17T01:20:07.733Z"
+              "WhenOpened": "2024-09-17T01:20:07.733Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -628,7 +663,8 @@
               "RelativeToolTip": "SistemaReservaIngressos\\Views\\Contact.aspx.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T23:56:12.89Z"
+              "WhenOpened": "2024-09-16T23:56:12.89Z",
+              "EditorCaption": ""
             }
           ]
         }
