@@ -4,7 +4,7 @@
     <link href="/Content/styles.css" rel="stylesheet" type="text/css" />
     <div class="container-filme">
         <div class="imagem-filme">
-            <asp:Image ID="imageUrl" runat="server" Height="239px" Width="197px" />
+            <asp:Image ID="imageUrl" runat="server" Height="272px" Width="208px" />
         </div>
         <div class="info-filme">
             <h1>
@@ -26,8 +26,7 @@
                 <span>
                     <asp:Label ID="lblPreco" runat="server" Text="Preço"></asp:Label></span>
             </div>
-            <h3 class="sinopse">
-                <asp:Label ID="lblSinopse" runat="server" Text="Sinopse"></asp:Label></h3>
+                <asp:Label ID="lblSinopse" runat="server" Text="Sinopse" CssClass="sinopse-filme"></asp:Label>
         </div>
     </div>
     <div class="reserva-nome">
@@ -38,13 +37,10 @@
     </div>
     <div class="container-reserva">
         <div class="reserva-horario">
-            <asp:Label ID="lblHorario" CssClass="horario-label" runat="server" Text="Selecionar Horário: "></asp:Label>
-            <asp:DropDownList ID="DropDownListHorarios" runat="server"></asp:DropDownList>         
-        </div>
-         <div class="reserva-sala">
-             <asp:Label ID="lblSala" CssClass="sala-label" runat="server" Text="Selecionar Sala: "></asp:Label>
-             <asp:DropDownList ID="DropDownListSalas" runat="server"></asp:DropDownList>
-        </div>
+            <asp:Label ID="lblHorario" CssClass="horario-label" runat="server" Text="Selecionar Horário: " ></asp:Label>
+            <asp:DropDownList ID="DropDownListHorarios" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlHorarios_SelectedIndexChanged"></asp:DropDownList>         
+        </div>      
+        <asp:Panel ID="panelAssentos" runat="server">
         <div class="reserva-assentos">
             <h4>
                 <asp:Label ID="lblAssento" runat="server" Text="Selecionar Assento"></asp:Label></h4>
@@ -72,16 +68,18 @@
                 <asp:CheckBox ID="c5" runat="server" Text="C5" />
                 <asp:CheckBox ID="c6" runat="server" Text="C6" />
             </div>
-            <div class="container-btn">
-                <asp:Button ID="btnFinalizarCompra" CssClass="btn-finalizar-compra" runat="server" Text="Finalizar Compra" OnClick="btnFinalizarCompra_Click" />
             </div>
-        </div>
-        <div class="container-detalhes-reserva">
+           </asp:Panel>
+            <div class="container-btn">
+                <asp:Button ID="btnFinalizarCompra" CssClass="btn-finalizar-compra" runat="server" Text="Finalizar Reserva" OnClick="BtnFinalizarCompra_Click" />
+            </div>
+ 
+        <div class="container-detalhes-reserva" Visible="false">
             <div>
                 <asp:Label ID="lblDetalhesTitulo" runat="server" Text="Detalhes da Reserva" CssClass="detalhes-reserva-titulo"></asp:Label>
             </div>
             <div>
-                <asp:Label ID="lblDetalhesReserva" runat="server" Text="Teste123" CssClass="detalhes-reserva" Visible="false"></asp:Label>
+                <asp:Label ID="lblDetalhesReserva" runat="server" CssClass="detalhes-reserva" Visible="false"></asp:Label>
             </div>
         </div>
     </div>

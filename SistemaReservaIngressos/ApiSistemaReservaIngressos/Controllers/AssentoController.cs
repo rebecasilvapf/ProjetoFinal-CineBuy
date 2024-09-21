@@ -49,6 +49,25 @@ namespace ApiSistemaReservaIngressos.Controllers
                 return StatusCode(500, ex);
             }
         }
+        //api/Assento/BuscarAssentosPorHorario/codigo
+        [HttpGet("BuscarAssentosPorHorario/{codigo}")]
+        public IActionResult BuscarAssentosPorHorario(int codigo)
+        {
+            try
+            {
+                var assento = _assentoService.BuscarAssentosPorHorario(codigo);
+                if (assento == null)
+                {
+                    return NotFound();
+                }
+                return Ok(assento);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex);
+            }
+        }
+
         //api/Assento/AdicionarAssento
         [HttpPost("AdicionarAssento")]
         public IActionResult AdicionarAssento(AssentoRequest assentoRequest)
@@ -56,7 +75,7 @@ namespace ApiSistemaReservaIngressos.Controllers
             try
             {
                 var novoAssento = _assentoService.AdicionarAssento(assentoRequest);
-                return Ok("Total de linhas adicionadas " + novoAssento);
+                return Ok("Id da reserva do assento: " + novoAssento);
             }
             catch (Exception ex)
             {
@@ -72,6 +91,20 @@ namespace ApiSistemaReservaIngressos.Controllers
             {
                 var assentoAlterado = _assentoService.AlterarAssento(codigo, assentoRequest);
                 return Ok("Total de linhas alteradas " + assentoAlterado);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
+        //api/Assento/AtualizarDisponibilidade/codigo
+        [HttpPut("AtualizarDisponibilidade/{codigo}")]
+        public IActionResult AtualizarDisponibilidade(int codigo, bool disponivel)
+        {
+            try
+            {
+                var disponibiliadeAssento = _assentoService.AtualizarDisponibilidade(codigo, disponivel);
+                return Ok("Total de linhas alteradas " + disponibiliadeAssento);
             }
             catch (Exception ex)
             {

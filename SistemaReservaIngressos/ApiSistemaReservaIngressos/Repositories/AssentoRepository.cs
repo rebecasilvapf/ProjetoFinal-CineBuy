@@ -24,7 +24,7 @@ namespace ApiSistemaReservaIngressos.Repositories
             {
                 throw new Exception("Erro ao buscar todos os assentos", ex);
             }
-        }
+        }     
         public Assentos BuscarAssento(int codigo)
         {
             try
@@ -36,12 +36,23 @@ namespace ApiSistemaReservaIngressos.Repositories
                 throw new Exception("Erro ao buscar o assento", ex);
             }
         }
+        public IEnumerable<Assentos> BuscarAssentosPorHorario(int codigo)
+        {
+            try
+            {
+                return _dbSession.Connection.Query<Assentos>("SELECT * FROM Assentos WHERE HorarioId = @HorarioId", new { HorarioId = codigo });
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception("Erro ao buscar os assentos referente ao horario", ex);
+            }
+        }
 
         public int AdicionarAssento(AssentoRequest request)
         {
             try
             {
-                string sql = "INSERT INTO Assentos(HorarioId, Fileira , Numero , Disponivel) VALUES (@HorarioId, @Fileira, @Numero, @Disponivel)";
+                string sql = "INSERT INTO Assentos(HorarioId, Fileira , Numero , Disponivel) OUTPUT INSERTED.AssentoId VALUES (@HorarioId, @Fileira, @Numero, @Disponivel)";
 
                 var param = new
                 {
@@ -50,8 +61,8 @@ namespace ApiSistemaReservaIngressos.Repositories
                     Numero = request.Numero,
                     Disponivel = request.Disponivel
                 };
-
-                return _dbSession.Connection.Execute(sql, param);
+              
+                return _dbSession.Connection.QuerySingle<int>(sql, param);
             }
             catch (SqlException ex)
             {
@@ -79,6 +90,26 @@ namespace ApiSistemaReservaIngressos.Repositories
             catch (SqlException ex)
             {
                 throw new Exception("Erro ao alterar o assento", ex);
+            }
+        }
+
+        public int AtualizarDisponibilidade(int codigo, bool disponivel)
+        {
+            try
+            {
+                string sql = "UPDATE Assentos SET Disponivel = @Disponivel WHERE AssentoId = @AssentoId";
+
+                var param = new
+                {
+                    AssentoId = codigo,
+                    Disponivel = disponivel
+                };
+
+                return _dbSession.Connection.Execute(sql, param);
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception("Erro ao alterar a disponibilidade do assento", ex);
             }
         }
 

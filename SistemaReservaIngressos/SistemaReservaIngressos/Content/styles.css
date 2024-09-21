@@ -49,6 +49,10 @@ body {
     justify-content: flex-start;
     gap: 10px;
 }
+.sinopse-filme {
+    font-size : 15px;
+
+}
 
 /* Estilos para as informações de span */
 .info-span {
@@ -88,21 +92,17 @@ body {
 }
 
 /* Estilos para o horário de reserva e salas */
-.horario-label, .sala-label{
+.horario-label{
     font-size: 20px;
     margin-bottom: 10px;
 }
 
-.reserva-horario, .reserva-sala{
+.reserva-horario{
     margin-bottom: 3px;
     padding: 10px;
     background-color: #21262D;
     border-radius: 10px;
 }
-
-/*.reserva-sala {
-    background-color: #21262D;
-}*/
 
 .drop-down-container {
     display: inline-block;
@@ -152,10 +152,10 @@ body {
     background-color: #21262D;
     border-radius: 10px;
     padding: 20px;
-    width: 80%; /* Ajuste conforme necessário */
-    max-width: 600px; /* Define uma largura máxima */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: adiciona uma sombra */
-    text-align: center; /* Centraliza o texto dentro do contêiner */
+    width: 80%; 
+    max-width: 600px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    text-align: center;
 }
 .detalhes-reserva {
     display: flex;

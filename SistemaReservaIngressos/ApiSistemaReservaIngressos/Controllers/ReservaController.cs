@@ -56,7 +56,7 @@ namespace ApiSistemaReservaIngressos.Controllers
             try
             {
                 var novaReserva = _reservaService.AdicionarReserva(reservaRequest);
-                return Ok("Total de linhas adicionadas " + novaReserva);
+                return Ok("Id da nova reserva: " + novaReserva);
             }
             catch (Exception ex)
             {
@@ -78,6 +78,22 @@ namespace ApiSistemaReservaIngressos.Controllers
                 return StatusCode(500, ex.Message);
             }
         }
+
+        //api/Reserva/CancelarReserva/codigo
+        [HttpPut("CancelarReserva/{codigo}")]
+        public IActionResult CancelarReserva(int codigo)
+        {
+            try
+            {
+                var reservaAlterada = _reservaService.CancelarReserva(codigo);
+                return Ok("Resultado = " + reservaAlterada);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
+
         //api/Reserva/ExcluirReserva/codigo
         [HttpDelete("ExcluirReserva/{codigo}")]
         public IActionResult ExcluirReserva(int codigo)

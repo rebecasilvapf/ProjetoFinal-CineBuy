@@ -6582,11 +6582,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-v2\\SistemaReservaIngressos\\ApiSistemaReservaIngressos\\ApiSistemaReservaIngressos.csproj",
+      "projectUniqueName": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\ApiSistemaReservaIngressos\\ApiSistemaReservaIngressos.csproj",
       "projectName": "ApiSistemaReservaIngressos",
-      "projectPath": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-v2\\SistemaReservaIngressos\\ApiSistemaReservaIngressos\\ApiSistemaReservaIngressos.csproj",
+      "projectPath": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\ApiSistemaReservaIngressos\\ApiSistemaReservaIngressos.csproj",
       "packagesPath": "C:\\Users\\rebec\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-v2\\SistemaReservaIngressos\\ApiSistemaReservaIngressos\\obj\\",
+      "outputPath": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\ApiSistemaReservaIngressos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

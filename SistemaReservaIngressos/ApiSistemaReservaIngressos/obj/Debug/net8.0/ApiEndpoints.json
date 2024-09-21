@@ -38,8 +38,45 @@
   },
   {
     "ContainingType": "ApiSistemaReservaIngressos.Controllers.AssentoController",
+    "Method": "AtualizarDisponibilidade",
+    "RelativePath": "api/Assento/AtualizarDisponibilidade/{codigo}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "disponivel",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaReservaIngressos.Controllers.AssentoController",
     "Method": "BuscarAssento",
     "RelativePath": "api/Assento/BuscarAssento/{codigo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaReservaIngressos.Controllers.AssentoController",
+    "Method": "BuscarAssentosPorHorario",
+    "RelativePath": "api/Assento/BuscarAssentosPorHorario/{codigo}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -392,6 +429,22 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaReservaIngressos.Controllers.ReservaController",
+    "Method": "CancelarReserva",
+    "RelativePath": "api/Reserva/CancelarReserva/{codigo}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {

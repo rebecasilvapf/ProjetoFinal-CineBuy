@@ -43,7 +43,7 @@ namespace ApiSistemaReservaIngressos.Repositories
         {
             try
             {
-                string sql = "INSERT INTO Reservas (HorarioId, Cliente, DataReserva, Confirmado) VALUES (@HorarioId, @Cliente, @DataReserva, @Confirmado)";
+                string sql = "INSERT INTO Reservas (HorarioId, Cliente, DataReserva, Confirmado)  OUTPUT INSERTED.ReservaId VALUES (@HorarioId, @Cliente, @DataReserva, @Confirmado)";
 
                 var param = new
                 {
@@ -53,7 +53,8 @@ namespace ApiSistemaReservaIngressos.Repositories
                     Confirmado = request.Confirmado
                 };
 
-                return _dboSession.Connection.Execute(sql, param);
+                // Executa o SQL e retorna o ID da nova reserva
+                return _dboSession.Connection.QuerySingle<int>(sql, param);
             }
             catch (SqlException ex)
             {
@@ -84,6 +85,39 @@ namespace ApiSistemaReservaIngressos.Repositories
             }
         }
 
+        public bool CancelarReserva(int codigo)
+        {
+            using(var transaction = _dboSession.Connection.BeginTransaction()) //Garatir a execução de todas as operações sejam executadas juntas
+            {
+                try
+                {
+                    //Recuperar todos os assentos relacionados a reserva
+                    string apiUrlDetalhes = "SELECT AssentoId FROM DetalhesReserva WHERE ReservaId = @ReservaId";
+                    var assentoIds = _dboSession.Connection.Query<int>(apiUrlDetalhes, new { ReservaId = codigo }, transaction).ToList();
+
+                    if (assentoIds.Any())
+                    {
+                        // Atualizar a disponibilidade dos assentos para true
+                        string apiUrlAssentos = "UPDATE Assentos SET Disponivel = 1 WHERE AssentoId IN @AssentoIds";
+                        _dboSession.Connection.Execute(apiUrlAssentos, new { AssentoIds = assentoIds }, transaction);
+                    }
+
+                    //Atualizar o estado da reserva para false
+                    var deleteDetalhesQuery = "UPDATE Reservas SET Confirmado = 0 WHERE ReservaId = @ReservaId";
+                    _dboSession.Connection.Execute(deleteDetalhesQuery, new { ReservaId = codigo }, transaction);
+
+                    // Confirmar a transação
+                    transaction.Commit();
+                    return true;
+                }
+                catch (SqlException ex)
+                {
+                    // Reverter a transação em caso de erro
+                    transaction.Rollback();
+                    throw new Exception("Erro ao cancelar a reserva.", ex);
+                }
+            }         
+        }
         public int ExcluirReserva(int codigo)
         {
             try

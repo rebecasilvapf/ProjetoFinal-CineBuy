@@ -20,7 +20,10 @@ namespace ApiSistemaReservaIngressos.Services
         {
             return _assentoRepository.BuscarAssento(codigo);
         }
-
+        public IEnumerable<Assentos> BuscarAssentosPorHorario(int codigo)
+        {
+            return _assentoRepository.BuscarAssentosPorHorario(codigo);
+        }
         public int AdicionarAssento(AssentoRequest assentoRequest)
         {
             if (assentoRequest.HorarioId <= 0 || assentoRequest.Numero <=0)
@@ -47,6 +50,11 @@ namespace ApiSistemaReservaIngressos.Services
             }
 
             return _assentoRepository.AlterarAssento(codigo, assentoRequest);
+        }
+
+        public int AtualizarDisponibilidade(int codigo, bool disponivel)
+        {
+            return _assentoRepository.AtualizarDisponibilidade(codigo, disponivel);
         }
 
         public int ExcluirAssento(int codigo)

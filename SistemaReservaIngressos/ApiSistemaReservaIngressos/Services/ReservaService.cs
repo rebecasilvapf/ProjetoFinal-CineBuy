@@ -56,6 +56,11 @@ namespace ApiSistemaReservaIngressos.Services
             return _reservaRepository.AlterarReserva(codigo, reservaRequest);
         }
 
+        public bool CancelarReserva(int codigo)
+        {
+            return _reservaRepository.CancelarReserva(codigo);
+        }
+
         public int ExcluiReserva(int codigo)
         {
             return _reservaRepository.ExcluirReserva(codigo);

@@ -37,9 +37,9 @@ namespace ApiSistemaReservaIngressos.Services
             {
                 throw new ArgumentException("Campo sala precisa ser preenchido");
             }
-            if (horarioRequest.DataHora < DateTime.Now)
+            if (horarioRequest.DataHora <= DateTime.Now)
             {
-                throw new ArgumentException("O horário deve ser futuro");
+                throw new ArgumentException("A data e hora devem ser posteriores ao momento atual.");
             }
             return _horarioRepository.AdicionarHorario(horarioRequest);
         }
@@ -54,11 +54,11 @@ namespace ApiSistemaReservaIngressos.Services
             {
                 throw new ArgumentException("Campo sala precisa ser preenchido");
             }
-            if (horarioRequest.DataHora < DateTime.Now)
+            if (horarioRequest.DataHora <= DateTime.Now)
             {
-                throw new ArgumentException("O horário deve ser futuro");
+                throw new ArgumentException("A data e hora devem ser posteriores ao momento atual.");
             }
-            return _horarioRepository.AdicionarHorario(horarioRequest);
+            return _horarioRepository.AlterarHorario(codigo, horarioRequest);
         }
         public int ExcluirFilme(int codigo)
         {
