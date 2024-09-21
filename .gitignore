@@ -1,0 +1,6 @@
+# Arquivos e diretórios do Visual Studio
+.vs/
+*.user
+*.suo
+*.tmp
+*.log
