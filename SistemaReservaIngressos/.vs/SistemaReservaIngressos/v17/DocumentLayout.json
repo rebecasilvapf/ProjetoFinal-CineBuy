@@ -182,8 +182,7 @@
               "RelativeToolTip": "ApiSistemaReservaIngressos\\Services\\FilmeService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T04:11:36.734Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-21T04:11:36.734Z"
             },
             {
               "$type": "Document",
@@ -195,8 +194,7 @@
               "RelativeToolTip": "ApiSistemaReservaIngressos\\Repositories\\ReservaRepository.cs",
               "ViewState": "AgIAAFYAAAAAAAAAAAAQwFcAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T00:46:36.056Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-21T00:46:36.056Z"
             },
             {
               "$type": "Document",
@@ -216,9 +214,9 @@
               "Title": "ComprarFilme.aspx.cs",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Views\\ComprarFilme.aspx.cs",
               "RelativeDocumentMoniker": "SistemaReservaIngressos\\Views\\ComprarFilme.aspx.cs",
-              "ToolTip": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Views\\ComprarFilme.aspx.cs*",
-              "RelativeToolTip": "SistemaReservaIngressos\\Views\\ComprarFilme.aspx.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Views\\ComprarFilme.aspx.cs",
+              "RelativeToolTip": "SistemaReservaIngressos\\Views\\ComprarFilme.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-18T02:41:34.107Z",
               "EditorCaption": ""
@@ -281,8 +279,7 @@
               "RelativeToolTip": "ApiSistemaReservaIngressos\\Controllers\\ReservaController.cs",
               "ViewState": "AgIAAEAAAAAAAAAAAAAgwFUAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T23:34:29.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-17T23:34:29.231Z"
             },
             {
               "$type": "Document",
@@ -294,8 +291,7 @@
               "RelativeToolTip": "SistemaReservaIngressos\\Global.asax.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T23:37:55.827Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-16T23:37:55.827Z"
             },
             {
               "$type": "Document",

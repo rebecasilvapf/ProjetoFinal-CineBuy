@@ -395,6 +395,7 @@
     <Compile Include="Models\ReservaRequest.cs" />
     <Compile Include="Views\ComprarFilme.aspx.cs">
       <DependentUpon>ComprarFilme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\ComprarFilme.aspx.designer.cs">
       <DependentUpon>ComprarFilme.aspx</DependentUpon>

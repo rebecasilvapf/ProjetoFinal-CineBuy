@@ -7,20 +7,8 @@
       "RelativeMoniker": "D:0:0:{71808FA0-E673-437A-96B9-E30F669632B5}|SistemaReservaIngressos\\SistemaReservaIngressos.csproj|solutionrelative:sistemareservaingressos\\views\\comprarfilme.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{71808FA0-E673-437A-96B9-E30F669632B5}|SistemaReservaIngressos\\SistemaReservaIngressos.csproj|c:\\users\\rebec\\downloads\\sistemareservaingressos-cinebuy\\sistemareservaingressos\\sistemareservaingressos\\services\\reservaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71808FA0-E673-437A-96B9-E30F669632B5}|SistemaReservaIngressos\\SistemaReservaIngressos.csproj|solutionrelative:sistemareservaingressos\\services\\reservaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71808FA0-E673-437A-96B9-E30F669632B5}|SistemaReservaIngressos\\SistemaReservaIngressos.csproj|c:\\users\\rebec\\downloads\\sistemareservaingressos-cinebuy\\sistemareservaingressos\\sistemareservaingressos\\services\\assentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71808FA0-E673-437A-96B9-E30F669632B5}|SistemaReservaIngressos\\SistemaReservaIngressos.csproj|solutionrelative:sistemareservaingressos\\services\\assentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71808FA0-E673-437A-96B9-E30F669632B5}|SistemaReservaIngressos\\SistemaReservaIngressos.csproj|c:\\users\\rebec\\downloads\\sistemareservaingressos-cinebuy\\sistemareservaingressos\\sistemareservaingressos\\services\\horarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71808FA0-E673-437A-96B9-E30F669632B5}|SistemaReservaIngressos\\SistemaReservaIngressos.csproj|solutionrelative:sistemareservaingressos\\services\\horarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71808FA0-E673-437A-96B9-E30F669632B5}|SistemaReservaIngressos\\SistemaReservaIngressos.csproj|c:\\users\\rebec\\downloads\\sistemareservaingressos-cinebuy\\sistemareservaingressos\\sistemareservaingressos\\services\\filmeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71808FA0-E673-437A-96B9-E30F669632B5}|SistemaReservaIngressos\\SistemaReservaIngressos.csproj|solutionrelative:sistemareservaingressos\\services\\filmeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{71808FA0-E673-437A-96B9-E30F669632B5}|SistemaReservaIngressos\\SistemaReservaIngressos.csproj|C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\sistemareservaingressos\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71808FA0-E673-437A-96B9-E30F669632B5}|SistemaReservaIngressos\\SistemaReservaIngressos.csproj|solutionrelative:sistemareservaingressos\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{72E61C9A-F5A0-4F95-B2D7-BE6EF91ADC1D}|ApiSistemaReservaIngressos\\ApiSistemaReservaIngressos.csproj|c:\\users\\rebec\\downloads\\sistemareservaingressos-cinebuy\\sistemareservaingressos\\apisistemareservaingressos\\services\\filmeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -103,10 +91,6 @@
       "RelativeMoniker": "D:0:0:{71808FA0-E673-437A-96B9-E30F669632B5}|SistemaReservaIngressos\\SistemaReservaIngressos.csproj|solutionrelative:sistemareservaingressos\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{71808FA0-E673-437A-96B9-E30F669632B5}|SistemaReservaIngressos\\SistemaReservaIngressos.csproj|C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\sistemareservaingressos\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71808FA0-E673-437A-96B9-E30F669632B5}|SistemaReservaIngressos\\SistemaReservaIngressos.csproj|solutionrelative:sistemareservaingressos\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{71808FA0-E673-437A-96B9-E30F669632B5}|SistemaReservaIngressos\\SistemaReservaIngressos.csproj|C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\sistemareservaingressos\\site.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{71808FA0-E673-437A-96B9-E30F669632B5}|SistemaReservaIngressos\\SistemaReservaIngressos.csproj|solutionrelative:sistemareservaingressos\\site.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -178,7 +162,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -190,7 +174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "FilmeService.cs",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\ApiSistemaReservaIngressos\\Services\\FilmeService.cs",
               "RelativeDocumentMoniker": "ApiSistemaReservaIngressos\\Services\\FilmeService.cs",
@@ -198,64 +182,11 @@
               "RelativeToolTip": "ApiSistemaReservaIngressos\\Services\\FilmeService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T04:11:36.734Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ReservaService.cs",
-              "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Services\\ReservaService.cs",
-              "RelativeDocumentMoniker": "SistemaReservaIngressos\\Services\\ReservaService.cs",
-              "ToolTip": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Services\\ReservaService.cs",
-              "RelativeToolTip": "SistemaReservaIngressos\\Services\\ReservaService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T04:10:19.306Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AssentoService.cs",
-              "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Services\\AssentoService.cs",
-              "RelativeDocumentMoniker": "SistemaReservaIngressos\\Services\\AssentoService.cs",
-              "ToolTip": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Services\\AssentoService.cs",
-              "RelativeToolTip": "SistemaReservaIngressos\\Services\\AssentoService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAA9wCAAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T04:09:56.067Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HorarioService.cs",
-              "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Services\\HorarioService.cs",
-              "RelativeDocumentMoniker": "SistemaReservaIngressos\\Services\\HorarioService.cs",
-              "ToolTip": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Services\\HorarioService.cs",
-              "RelativeToolTip": "SistemaReservaIngressos\\Services\\HorarioService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T04:09:43.11Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-21T04:11:36.734Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "FilmeService.cs",
-              "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Services\\FilmeService.cs",
-              "RelativeDocumentMoniker": "SistemaReservaIngressos\\Services\\FilmeService.cs",
-              "ToolTip": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Services\\FilmeService.cs",
-              "RelativeToolTip": "SistemaReservaIngressos\\Services\\FilmeService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T04:00:56.74Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "ReservaRepository.cs",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\ApiSistemaReservaIngressos\\Repositories\\ReservaRepository.cs",
               "RelativeDocumentMoniker": "ApiSistemaReservaIngressos\\Repositories\\ReservaRepository.cs",
@@ -263,24 +194,11 @@
               "RelativeToolTip": "ApiSistemaReservaIngressos\\Repositories\\ReservaRepository.cs",
               "ViewState": "AgIAAFYAAAAAAAAAAAAQwFcAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T00:46:36.056Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-21T00:46:36.056Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AssentoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\ApiSistemaReservaIngressos\\Repositories\\AssentoRepository.cs",
-              "RelativeDocumentMoniker": "ApiSistemaReservaIngressos\\Repositories\\AssentoRepository.cs",
-              "ToolTip": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\ApiSistemaReservaIngressos\\Repositories\\AssentoRepository.cs",
-              "RelativeToolTip": "ApiSistemaReservaIngressos\\Repositories\\AssentoRepository.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAgwIEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T00:39:27.475Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "AssentoController.cs",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\ApiSistemaReservaIngressos\\Controllers\\AssentoController.cs",
               "RelativeDocumentMoniker": "ApiSistemaReservaIngressos\\Controllers\\AssentoController.cs",
@@ -298,14 +216,14 @@
               "RelativeDocumentMoniker": "SistemaReservaIngressos\\Views\\ComprarFilme.aspx.cs",
               "ToolTip": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Views\\ComprarFilme.aspx.cs",
               "RelativeToolTip": "SistemaReservaIngressos\\Views\\ComprarFilme.aspx.cs",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAcwIwAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-18T02:41:34.107Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "ComprarFilme.aspx",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Views\\ComprarFilme.aspx",
               "RelativeDocumentMoniker": "SistemaReservaIngressos\\Views\\ComprarFilme.aspx",
@@ -317,7 +235,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 15,
               "Title": "HorarioRepository.cs",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\ApiSistemaReservaIngressos\\Repositories\\HorarioRepository.cs",
               "RelativeDocumentMoniker": "ApiSistemaReservaIngressos\\Repositories\\HorarioRepository.cs",
@@ -329,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 10,
               "Title": "HorarioService.cs",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\ApiSistemaReservaIngressos\\Services\\HorarioService.cs",
               "RelativeDocumentMoniker": "ApiSistemaReservaIngressos\\Services\\HorarioService.cs",
@@ -341,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 7,
               "Title": "ReservaService.cs",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\ApiSistemaReservaIngressos\\Services\\ReservaService.cs",
               "RelativeDocumentMoniker": "ApiSistemaReservaIngressos\\Services\\ReservaService.cs",
@@ -353,7 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "ReservaController.cs",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\ApiSistemaReservaIngressos\\Controllers\\ReservaController.cs",
               "RelativeDocumentMoniker": "ApiSistemaReservaIngressos\\Controllers\\ReservaController.cs",
@@ -361,12 +279,35 @@
               "RelativeToolTip": "ApiSistemaReservaIngressos\\Controllers\\ReservaController.cs",
               "ViewState": "AgIAAEAAAAAAAAAAAAAgwFUAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T23:34:29.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-17T23:34:29.231Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 1,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Global.asax.cs",
+              "RelativeDocumentMoniker": "SistemaReservaIngressos\\Global.asax.cs",
+              "ToolTip": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Global.asax.cs",
+              "RelativeToolTip": "SistemaReservaIngressos\\Global.asax.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T23:37:55.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AssentoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\ApiSistemaReservaIngressos\\Repositories\\AssentoRepository.cs",
+              "RelativeDocumentMoniker": "ApiSistemaReservaIngressos\\Repositories\\AssentoRepository.cs",
+              "ToolTip": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\ApiSistemaReservaIngressos\\Repositories\\AssentoRepository.cs",
+              "RelativeToolTip": "ApiSistemaReservaIngressos\\Repositories\\AssentoRepository.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAgwIEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T00:39:27.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Assentos.cs",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\ApiSistemaReservaIngressos\\Models\\Assentos.cs",
               "RelativeDocumentMoniker": "ApiSistemaReservaIngressos\\Models\\Assentos.cs",
@@ -378,7 +319,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 14,
               "Title": "Filme.cs",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Models\\Filme.cs",
               "RelativeDocumentMoniker": "SistemaReservaIngressos\\Models\\Filme.cs",
@@ -390,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 13,
               "Title": "Filmes.aspx",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Views\\Filmes.aspx",
               "RelativeDocumentMoniker": "SistemaReservaIngressos\\Views\\Filmes.aspx",
@@ -402,7 +343,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 12,
               "Title": "styles.css",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Content\\styles.css",
               "RelativeDocumentMoniker": "SistemaReservaIngressos\\Content\\styles.css",
@@ -414,7 +355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 8,
               "Title": "AssentoService.cs",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\ApiSistemaReservaIngressos\\Services\\AssentoService.cs",
               "RelativeDocumentMoniker": "ApiSistemaReservaIngressos\\Services\\AssentoService.cs",
@@ -426,7 +367,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 19,
               "Title": "AssentoRequest.cs",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Models\\AssentoRequest.cs",
               "RelativeDocumentMoniker": "SistemaReservaIngressos\\Models\\AssentoRequest.cs",
@@ -438,7 +379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 16,
               "Title": "Assentos.cs",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Models\\Assentos.cs",
               "RelativeDocumentMoniker": "SistemaReservaIngressos\\Models\\Assentos.cs",
@@ -450,7 +391,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 17,
               "Title": "ReservaRequest.cs",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Models\\ReservaRequest.cs",
               "RelativeDocumentMoniker": "SistemaReservaIngressos\\Models\\ReservaRequest.cs",
@@ -462,7 +403,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 18,
               "Title": "ReservaRequest.cs",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\ApiSistemaReservaIngressos\\Models\\ReservaRequest.cs",
               "RelativeDocumentMoniker": "ApiSistemaReservaIngressos\\Models\\ReservaRequest.cs",
@@ -474,7 +415,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 30,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\ApiSistemaReservaIngressos\\appsettings.json",
               "RelativeDocumentMoniker": "ApiSistemaReservaIngressos\\appsettings.json",
@@ -486,7 +427,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 27,
               "Title": "Filmes.cs",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\ApiSistemaReservaIngressos\\Models\\Filmes.cs",
               "RelativeDocumentMoniker": "ApiSistemaReservaIngressos\\Models\\Filmes.cs",
@@ -498,7 +439,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 28,
               "Title": "FilmeRepository.cs",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\ApiSistemaReservaIngressos\\Repositories\\FilmeRepository.cs",
               "RelativeDocumentMoniker": "ApiSistemaReservaIngressos\\Repositories\\FilmeRepository.cs",
@@ -510,7 +451,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 29,
               "Title": "FilmeRequest.cs",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\ApiSistemaReservaIngressos\\Models\\FilmeRequest.cs",
               "RelativeDocumentMoniker": "ApiSistemaReservaIngressos\\Models\\FilmeRequest.cs",
@@ -522,7 +463,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 20,
               "Title": "Reservas.cs",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\ApiSistemaReservaIngressos\\Models\\Reservas.cs",
               "RelativeDocumentMoniker": "ApiSistemaReservaIngressos\\Models\\Reservas.cs",
@@ -534,7 +475,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 22,
               "Title": "Site.Master.cs",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Site.Master.cs",
               "RelativeDocumentMoniker": "SistemaReservaIngressos\\Site.Master.cs",
@@ -546,7 +487,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 21,
               "Title": "Web.config",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Web.config",
               "RelativeDocumentMoniker": "SistemaReservaIngressos\\Web.config",
@@ -559,7 +500,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 23,
               "Title": "FilmeController.cs",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\ApiSistemaReservaIngressos\\Controllers\\FilmeController.cs",
               "RelativeDocumentMoniker": "ApiSistemaReservaIngressos\\Controllers\\FilmeController.cs",
@@ -571,19 +512,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Global.asax.cs",
-              "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Global.asax.cs",
-              "RelativeDocumentMoniker": "SistemaReservaIngressos\\Global.asax.cs",
-              "ToolTip": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Global.asax.cs",
-              "RelativeToolTip": "SistemaReservaIngressos\\Global.asax.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T23:37:55.827Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 26,
               "Title": "Horarios.cs",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\ApiSistemaReservaIngressos\\Models\\Horarios.cs",
               "RelativeDocumentMoniker": "ApiSistemaReservaIngressos\\Models\\Horarios.cs",
@@ -595,7 +524,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 24,
               "Title": "Horario.cs",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Models\\Horario.cs",
               "RelativeDocumentMoniker": "SistemaReservaIngressos\\Models\\Horario.cs",
@@ -607,7 +536,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 25,
               "Title": "HorarioController.cs",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\ApiSistemaReservaIngressos\\Controllers\\HorarioController.cs",
               "RelativeDocumentMoniker": "ApiSistemaReservaIngressos\\Controllers\\HorarioController.cs",
@@ -619,7 +548,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 31,
               "Title": "bootstrap.css",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Content\\bootstrap.css",
               "RelativeDocumentMoniker": "SistemaReservaIngressos\\Content\\bootstrap.css",
@@ -631,7 +560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 32,
               "Title": "Contact.aspx",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Views\\Contact.aspx",
               "RelativeDocumentMoniker": "SistemaReservaIngressos\\Views\\Contact.aspx",
@@ -643,7 +572,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 33,
               "Title": "Site.Master",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Site.Master",
               "RelativeDocumentMoniker": "SistemaReservaIngressos\\Site.Master",
@@ -655,7 +584,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 36,
               "Title": "Site.Mobile.Master.designer.cs",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Site.Mobile.Master.designer.cs",
               "RelativeDocumentMoniker": "SistemaReservaIngressos\\Site.Mobile.Master.designer.cs",
@@ -667,7 +596,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 37,
               "Title": "Site.Mobile.Master.cs",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Site.Mobile.Master.cs",
               "RelativeDocumentMoniker": "SistemaReservaIngressos\\Site.Mobile.Master.cs",
@@ -679,7 +608,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 34,
               "Title": "Site.css",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Content\\Site.css",
               "RelativeDocumentMoniker": "SistemaReservaIngressos\\Content\\Site.css",
@@ -691,7 +620,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 35,
               "Title": "Contact.aspx.cs",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Views\\Contact.aspx.cs",
               "RelativeDocumentMoniker": "SistemaReservaIngressos\\Views\\Contact.aspx.cs",
