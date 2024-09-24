@@ -20,16 +20,13 @@ body {
     flex-wrap: wrap;
     gap: 30px;
     padding: 15px;
-
 }
-
 /* Estilos para o contêiner do filme */
 .container-filme {
     display: flex;
-    gap: 20px; /* Espaçamento entre a imagem e as informações do filme */
+    gap: 20px; 
     padding: 20px;
 }
-
 /* Estilos para a imagem do filme */
 .image-button-filmes {
     flex-shrink: 0;
@@ -51,18 +48,13 @@ body {
 }
 .sinopse-filme {
     font-size : 15px;
+    margin-top: 13px;
 
 }
-
 /* Estilos para as informações de span */
 .info-span {
     display: flex;
     gap: 10px; /* Espaçamento entre os spans */
-}
-
-/* Estilos para a sinopse */
-.sinopse {
-    margin-top: 25px;
 }
 
 /* Estilos para o contêiner de reserva */
@@ -82,34 +74,37 @@ body {
     padding: 10px;
     font-size: 20px;
     background-color: #21262D;
-    border-radius: 10px;
+    border-radius: 10px;    
 }
 .txtbox-nome {
-    width: 700px; 
-    height: 30px; 
-    font-size: 16px; 
-    border-radius: 5px;
+    width: 270px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-left: 4px;
 }
 
-/* Estilos para o horário de reserva e salas */
-.horario-label{
+/* Estilos para o horário de reserva */
+.horario-label {
     font-size: 20px;
     margin-bottom: 10px;
 }
-
-.reserva-horario{
+.reserva-horario {
     margin-bottom: 3px;
     padding: 10px;
     background-color: #21262D;
     border-radius: 10px;
 }
-
-.drop-down-container {
-    display: inline-block;
-    vertical-align: top;
+.dropdown-horario {
+    padding: 5px;
+    border-radius: 7px; /* Arredonda os cantos */
+    border: 1px solid #ccc; /* Define uma borda sutil */
+    width: 100%;
+    height: 30px;
+    margin-left: 10px;
 }
-
-
 /* Estilos para os assentos */
 .reserva-assentos {
     background-color: #21262D;
@@ -121,8 +116,24 @@ body {
     flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 20px;
+    justify-content: center;
+    transform: scale(1.2);
 }
-
+ /* Estilo para o checkbox e o texto */
+  .assentos .checkbox-container {
+     display: block;
+     align-items: center; /* Centraliza o texto horizontalmente com o checkbox */
+     margin-right: 10px; /* Espaçamento entre os checkboxes */
+}
+/* Estilo para o checkbox */
+   .assentos input[type="checkbox"] {
+     width: 30px;
+     height: 22px;
+     cursor: pointer;
+     margin-left: 19px;
+     margin-right: 1px;   
+ }
+  
 /* Estilos para o botão de finalizar compra */
 .container-btn {
     display: flex;
@@ -144,23 +155,57 @@ body {
     background-color: darkgreen; 
 }
 
-/*Lógica e estilo dos detalhes da reserva*/
+/* Estilo para o painel de detalhes da reserva */
 .container-detalhes-reserva {
-    margin: 20px auto; /* Centraliza horizontalmente e adiciona margem superior e inferior */
-    display: block;
-    justify-content: center;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto; 
+    padding: 10px;
+    border: 1px 2px white;
+    border-radius: 5px;
     background-color: #21262D;
-    border-radius: 10px;
-    padding: 20px;
-    width: 80%; 
-    max-width: 600px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    text-align: center; 
+}
+
+/* Estilo para o título da reserva */
+.detalhes-reserva-titulo {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Estilo para as seções individuais de reserva */
+.detalhes-reserva .reserva {
+    margin-bottom: 10px;
+    text-align: left; 
+}
+
+/* Estilo para o título do painel */
+.detalhes-titulo {
+    margin-bottom: 15px;
+}
+/* Estilo para as mensagens de erro */
+.mensagem-erro .mensagem-erro-cancelar {
+    color: red;
+}
+/*Estilo para botão de confirmação de reserva*/
+.btn-cancelar-reserva {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: darkred;
+    color: white;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
     text-align: center;
 }
-.detalhes-reserva {
-    display: flex;
-}
-.detalhes-reserva-titulo {
-    display: block;
-    font-weight: bold;
+.btn-menu-inicial {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+    text-align: center;
 }

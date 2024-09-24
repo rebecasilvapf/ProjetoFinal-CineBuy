@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiSistemaReservaIngressos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf6f12b31ebe858de46ac1efa47c67228012f850")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9b4673e18730acb446272f4a463e9a504757ed2")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiSistemaReservaIngressos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiSistemaReservaIngressos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

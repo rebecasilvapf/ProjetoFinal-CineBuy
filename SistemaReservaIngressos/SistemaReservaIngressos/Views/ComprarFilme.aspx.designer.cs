@@ -96,6 +96,24 @@ namespace SistemaReservaIngressos.Views
         protected global::System.Web.UI.WebControls.Label lblPreco;
 
         /// <summary>
+        /// Controle traco4.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label traco4;
+
+        /// <summary>
+        /// Controle lblSala.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblSala;
+
+        /// <summary>
         /// Controle lblSinopse.
         /// </summary>
         /// <remarks>
@@ -159,6 +177,15 @@ namespace SistemaReservaIngressos.Views
         protected global::System.Web.UI.WebControls.CheckBox a1;
 
         /// <summary>
+        /// Controle a2.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox a2;
+
+        /// <summary>
         /// Controle a3.
         /// </summary>
         /// <remarks>
@@ -193,15 +220,6 @@ namespace SistemaReservaIngressos.Views
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox a6;
-
-        /// <summary>
-        /// Controle a7.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox a7;
 
         /// <summary>
         /// Controle b1.
@@ -321,13 +339,13 @@ namespace SistemaReservaIngressos.Views
         protected global::System.Web.UI.WebControls.Button btnFinalizarCompra;
 
         /// <summary>
-        /// Controle lblDetalhesTitulo.
+        /// Controle mostrarErros.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDetalhesTitulo;
+        protected global::System.Web.UI.WebControls.Panel mostrarErros;
 
         /// <summary>
         /// Controle lblDetalhesReserva.

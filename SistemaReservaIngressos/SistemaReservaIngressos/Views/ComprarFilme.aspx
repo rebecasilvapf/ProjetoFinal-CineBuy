@@ -12,19 +12,19 @@
             </h1>
             <div class="info-span">
                 <span class="classificacao">
-                    <asp:Label ID="lblClassificacao" runat="server" Text="14"></asp:Label></span>
+                    <asp:Label ID="lblClassificacao" runat="server"></asp:Label></span>
                 <span>
                     <asp:Label ID="traco" runat="server" Text=" | "></asp:Label></span>
                 <span>
-                    <asp:Label ID="lblDuracao" runat="server" Text="60m"></asp:Label></span>
+                    <asp:Label ID="lblDuracao" runat="server"></asp:Label></span>
                 <span>
                     <asp:Label ID="traco2" runat="server" Text=" | "></asp:Label></span>
                 <span>
-                    <asp:Label ID="lblGenero" runat="server" Text=" Animação"></asp:Label></span>
-                <span>
-                    <asp:Label ID="lbltraco3" runat="server" Text=" | "></asp:Label></span>
-                <span>
-                    <asp:Label ID="lblPreco" runat="server" Text="Preço"></asp:Label></span>
+                    <asp:Label ID="lblGenero" runat="server"></asp:Label></span>
+                <span><asp:Label ID="lbltraco3" runat="server" Text=" | "></asp:Label></span>
+                <span><asp:Label ID="lblPreco" runat="server"></asp:Label></span>      
+                 <span><asp:Label ID="traco4" runat="server" Text=" | "></asp:Label></span>
+                 <span><asp:Label ID="lblSala" runat="server"></asp:Label></span> 
             </div>
                 <asp:Label ID="lblSinopse" runat="server" Text="Sinopse" CssClass="sinopse-filme"></asp:Label>
         </div>
@@ -37,50 +37,82 @@
     </div>
     <div class="container-reserva">
         <div class="reserva-horario">
-            <asp:Label ID="lblHorario" CssClass="horario-label" runat="server" Text="Selecionar Horário: " ></asp:Label>
-            <asp:DropDownList ID="DropDownListHorarios" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlHorarios_SelectedIndexChanged"></asp:DropDownList>         
+            <asp:Label ID="lblHorario" CssClass="horario-label" runat="server" Text="Data e Horário: " ></asp:Label>
+            <asp:DropDownList ID="DropDownListHorarios" runat="server" CssClass="dropdown-horario" AutoPostBack="True" OnSelectedIndexChanged="ddlHorarios_SelectedIndexChanged"></asp:DropDownList>         
         </div>      
-        <asp:Panel ID="panelAssentos" runat="server">
+        <asp:Panel ID="panelAssentos" runat="server" CssClass="reserva-assentos" Visible="false">
         <div class="reserva-assentos">
             <h4>
-                <asp:Label ID="lblAssento" runat="server" Text="Selecionar Assento"></asp:Label></h4>
+                <asp:Label ID="lblAssento" runat="server" Text="Selecionar Assento" CssClass="title-assentos"></asp:Label></h4>   
             <div class="assentos">
-                <asp:CheckBox ID="a1" runat="server" Text="A1" />
-                <asp:CheckBox ID="a3" runat="server" Text="A2" />
-                <asp:CheckBox ID="a4" runat="server" Text="A3" />
-                <asp:CheckBox ID="a5" runat="server" Text="A4" />
-                <asp:CheckBox ID="a6" runat="server" Text="A5" />
-                <asp:CheckBox ID="a7" runat="server" Text="A6" />
+                <div class="checkbox-container">
+                    <asp:CheckBox ID="a1" runat="server" Text="A1" />
+                </div>
+                <div class="checkbox-container">
+                    <asp:CheckBox ID="a2" runat="server" Text="A2" />
+                </div>
+                <div class="checkbox-container">
+                    <asp:CheckBox ID="a3" runat="server" Text="A3" />
+                </div>
+                <div class="checkbox-container">
+                    <asp:CheckBox ID="a4" runat="server" Text="A4" />
+                </div>
+                <div class="checkbox-container">
+                    <asp:CheckBox ID="a5" runat="server" Text="A5" />
+                </div>
+                <div class="checkbox-container">
+                    <asp:CheckBox ID="a6" runat="server" Text="A6" />
+                </div>
             </div>
             <div class="assentos">
-                <asp:CheckBox ID="b1" runat="server" Text="B1" />
-                <asp:CheckBox ID="b2" runat="server" Text="B2" />
-                <asp:CheckBox ID="b3" runat="server" Text="B3" />
-                <asp:CheckBox ID="b4" runat="server" Text="B4" />
-                <asp:CheckBox ID="b5" runat="server" Text="B5" />
-                <asp:CheckBox ID="b6" runat="server" Text="B6" />
+                <div class="checkbox-container">
+                    <asp:CheckBox ID="b1" runat="server" Text="B1" />
+                </div>
+                <div class="checkbox-container">
+                    <asp:CheckBox ID="b2" runat="server" Text="B2" />
+                </div>
+                <div class="checkbox-container">
+                    <asp:CheckBox ID="b3" runat="server" Text="B3" />
+                </div>
+                <div class="checkbox-container">
+                    <asp:CheckBox ID="b4" runat="server" Text="B4" />
+                </div>
+                <div class="checkbox-container">
+                    <asp:CheckBox ID="b5" runat="server" Text="B5" />
+                </div>
+                <div class="checkbox-container">
+                    <asp:CheckBox ID="b6" runat="server" Text="B6" />
+                </div>
             </div>
             <div class="assentos">
-                <asp:CheckBox ID="c1" runat="server" Text="C1" />
-                <asp:CheckBox ID="c2" runat="server" Text="C2" />
-                <asp:CheckBox ID="c3" runat="server" Text="C3" />
-                <asp:CheckBox ID="c4" runat="server" Text="C4" />
-                <asp:CheckBox ID="c5" runat="server" Text="C5" />
-                <asp:CheckBox ID="c6" runat="server" Text="C6" />
+                <div class="checkbox-container">
+                    <asp:CheckBox ID="c1" runat="server" Text="C1" />
+                </div>
+                <div class="checkbox-container">
+                    <asp:CheckBox ID="c2" runat="server" Text="C2" />
+                </div>
+                <div class="checkbox-container">
+                    <asp:CheckBox ID="c3" runat="server" Text="C3" />
+                </div>
+                <div class="checkbox-container">
+                    <asp:CheckBox ID="c4" runat="server" Text="C4" />
+                </div>
+                <div class="checkbox-container">
+                    <asp:CheckBox ID="c5" runat="server" Text="C5" />
+                </div>
+                <div class="checkbox-container">
+                    <asp:CheckBox ID="c6" runat="server" Text="C6" />
+                </div>
             </div>
             </div>
            </asp:Panel>
             <div class="container-btn">
                 <asp:Button ID="btnFinalizarCompra" CssClass="btn-finalizar-compra" runat="server" Text="Finalizar Reserva" OnClick="BtnFinalizarCompra_Click" />
-            </div>
- 
-        <div class="container-detalhes-reserva" Visible="false">
-            <div>
-                <asp:Label ID="lblDetalhesTitulo" runat="server" Text="Detalhes da Reserva" CssClass="detalhes-reserva-titulo"></asp:Label>
-            </div>
-            <div>
-                <asp:Label ID="lblDetalhesReserva" runat="server" CssClass="detalhes-reserva" Visible="false"></asp:Label>
-            </div>
+            </div>         
+         <asp:Panel ID="mostrarErros" runat="server" CssClass="container-mostrar-erros" Visible="true">
+        <div class="mostrar-erros">
+              <asp:Label ID="lblDetalhesReserva" runat="server" Text="" CssClass="mensagem-erro"></asp:Label>
         </div>
+     </asp:Panel>
     </div>
 </asp:Content>

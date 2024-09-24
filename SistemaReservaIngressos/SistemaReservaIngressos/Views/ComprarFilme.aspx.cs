@@ -21,19 +21,19 @@ namespace SistemaReservaIngressos.Views
             if (!IsPostBack)
             {
                 string filmeId = Request.QueryString["id"];
+                
 
                 if (!string.IsNullOrEmpty(filmeId))
                 {
                     await CarregarInfoFilmes(filmeId);
-                    await CarregarHorarios(filmeId);
-                    await CarregarAssentosDisponiveis(filmeId);
+                    await CarregarHorarios(filmeId);                 
                 }
             }
         }
 
         private async Task CarregarInfoFilmes(string filmeId)
         {
-            // Endpoint da API para buscar o filme
+            // Endpoint da API para buscar o filme com base no id do filme
             string apiUrl = $"http://localhost:5109/api/Filme/BuscarFilme/{filmeId}";
 
             using (HttpClient httpClient = new HttpClient())
@@ -53,18 +53,18 @@ namespace SistemaReservaIngressos.Views
                         lblDuracao.Text = filme.Duracao.ToString() + "m";
                         lblGenero.Text = filme.Genero;
                         lblSinopse.Text = filme.Sinopse;
+                      
                     }
                 }
                 catch (Exception ex)
-                {
-                    // Lançar exceção com mensagem personalizada
+                {             
                     throw new Exception("Erro ao carregar informações do filme:", ex);
                 }
             }
         }
-
         private async Task CarregarHorarios(string filmeId)
         {
+            //Endpoint da API para buscar os horarios referente ao filme
             string apiUrl = $"http://localhost:5109/api/Horario/BuscarHorariosFilme/{filmeId}";
 
             using (HttpClient httpClient = new HttpClient())
@@ -81,15 +81,21 @@ namespace SistemaReservaIngressos.Views
                         // Verifica se a lista tem algum item
                         if (horarios.Any())
                         {
-                            // Pega o primeiro objeto da lista
+                            // Pega o primeiro objeto da lista para preço
                             Horario precoFixo = horarios.FirstOrDefault();
                             lblPreco.Text = precoFixo != null ? $"R${precoFixo.Preco}" : "Preço não encontrado";
 
                             // Preenche o DropDownList com os horários do filme
-                            DropDownListHorarios.DataSource = horarios;
+                            DropDownListHorarios.DataSource = horarios.Select(h => new
+                            {
+                                HorarioId = h.HorarioId,
+                                DataHora = h.DataHora.ToString("dd/MM/yyyy HH:mm") // Formata o horário
+                            }).ToList();
                             DropDownListHorarios.DataTextField = "DataHora";
                             DropDownListHorarios.DataValueField = "HorarioId";
                             DropDownListHorarios.DataBind(); // Vincula os dados
+
+                            DropDownListHorarios.Items.Insert(0, new ListItem("Selecione", ""));
                         }
                         else
                         {
@@ -98,105 +104,60 @@ namespace SistemaReservaIngressos.Views
                     }
                 }
                 catch (Exception ex)
-                {
-                    // Lançar exceção com mensagem personalizada
+                {                    
                     throw new Exception("Erro ao carregar horários do filme:", ex);
                 }
             }
         }
 
-        protected void ddlHorarios_SelectedIndexChanged(object sender, EventArgs e)
+        protected async void ddlHorarios_SelectedIndexChanged(object sender, EventArgs e)
         {
             // Captura o horarioId selecionado no DropDownList
             string horarioId = DropDownListHorarios.SelectedValue;
 
-            // Chama o método para carregar os assentos de acordo com o horário selecionado
-            Task.Run(() => CarregarAssentosDisponiveis(horarioId)).Wait();
-        }
+            // Chama o método para carregar os assentos e sala de acordo com o horário
+            panelAssentos.Visible = true;
+            await CarregarAssentosDisponiveis(horarioId);
+            await AtualizarSala(horarioId);
+        }  
 
-
-        private async Task<List<int>> ObterIdAssentosSelecionados(int horarioId)
+        private async Task<string> AtualizarSala(string horarioId)
         {
-            List<int> idsSelecionados = new List<int>();
+            //Endpoint da API para buscar os horarios referente ao horarioId
+            string apiUrl = $"http://localhost:5109/api/Horario/BuscarHorario/{horarioId}";
 
-            try
+            using (HttpClient httpClient = new HttpClient())
             {
-                //Verificar em cada controle no Panel -> panelAssentos
-                foreach (Control control in panelAssentos.Controls)
+                try
                 {
-                    //Verifica se o controle for um CheckBox e estiver selecionado
-                    if (control is CheckBox checkBox && checkBox.Checked)
-                    {
-                        string textoAssento = checkBox.Text; //Pega o Text que está no checkbox selecionado
+                    HttpResponseMessage response = await httpClient.GetAsync(apiUrl);
 
-                        char fileira = textoAssento[0]; //Fileiras "A", "B" ou "C"
-                        int numeroAssento = int.Parse(textoAssento.Substring(1)); //Número da fileira
-                        try
-                        {
-                            int idAssento = await ConstruirIdAssento(fileira, numeroAssento, horarioId);
-                            idsSelecionados.Add(idAssento);                                                      
-                        }
-                        catch (Exception ex)
-                        {
-                            lblDetalhesReserva.Text += "Erro ao construir o ID do assento: " + ex.Message + " ";
-                        }
+                    if (response.IsSuccessStatusCode)
+                    {
+                        Horario horario = await response.Content.ReadAsAsync<Horario>();
+                        return lblSala.Text = horario.Sala; //Retornar a sala referente ao horario Id para o label na tela
+                    }
+                    else
+                    {
+                        return lblSala.Text = "Erro ao obter informações da sala.";
                     }
                 }
-            }
-
-            catch (Exception ex)
-            {
-                lblDetalhesReserva.Text += $"Erro ao obter assentos: {ex.Message}. ";
-            }
-
-            return idsSelecionados;
-        }
-        private List<string> ObterAssentosSelecionados()
-        {
-            List<string> assentosSelecionados = new List<string>();
-
-            try
-            {
-                //Verificar em cada controle no Panel -> panelAssentos
-                foreach (Control control in panelAssentos.Controls)
+                catch (Exception ex)
                 {
-                    if(control is CheckBox check)
-                    //Verifica se o controle for um CheckBox e estiver selecionado
-                    if (control is CheckBox checkBox && checkBox.Checked)
-                    {
-                        string textoAssento = checkBox.Text; //Pega o Text que está no checkbox selecionado
-
-                        char fileira = textoAssento[0]; //Fileiras "A", "B", ou "C"
-                        int numeroAssento = int.Parse(textoAssento.Substring(1)); //Número da fileira
-
-                        try
-                        {
-                            string assento = $"{fileira}{numeroAssento}";
-                            assentosSelecionados.Add(assento);
-                        }
-                        catch (Exception ex)
-                        {
-                            lblDetalhesReserva.Text += "Erro ao construir a numeração dos assentos: " + ex.Message + " ";
-                        }
-                    }
+                    return lblSala.Text = "Erro ao buscar a sala: " + ex.Message;
                 }
             }
-            catch (Exception ex)
-            {
-                lblDetalhesReserva.Text += $"Erro ao obter assentos: {ex.Message}. ";
-            }
-
-            return assentosSelecionados;
         }
 
-        private async Task<int> ConstruirIdAssento( char fileira, int numeroAssento, int horarioId)
+        private async Task<int> ConstruirIdAssento(char fileira, int numeroAssento, int horarioId)
         {
+            //Endpoint da API para buscar os assentos referente ao horarioId
             string apiUrl = $"http://localhost:5109/api/Assento/BuscarAssentosPorHorario/{horarioId}";
 
             using (HttpClient httpClient = new HttpClient())
             {
                 try
-                {                  
+                {
                     HttpResponseMessage response = await httpClient.GetAsync(apiUrl);
 
                     if (response.IsSuccessStatusCode)
@@ -228,10 +189,88 @@ namespace SistemaReservaIngressos.Views
             }
         }
 
+        private async Task<List<int>> ObterIdAssentosSelecionados(int horarioId)
+        {
+            List<int> idsSelecionados = new List<int>();
+
+            try
+            {
+                //Verificar em cada controle no Panel -> panelAssentos
+                foreach (Control control in panelAssentos.Controls)
+                {
+                    //Verifica se o controle for um CheckBox e estiver selecionado
+                    if (control is CheckBox checkBox && checkBox.Checked)
+                    {
+                        string textoAssento = checkBox.Text; //Pega o Text que está no checkbox selecionado
+
+                        char fileira = textoAssento[0]; //Fileiras "A", "B" ou "C"
+                        int numeroAssento = int.Parse(textoAssento.Substring(1)); //Número da fileira
+                        try
+                        {
+                            int idAssento = await ConstruirIdAssento(fileira, numeroAssento, horarioId);
+                            idsSelecionados.Add(idAssento);
+                        }
+                        catch (Exception ex)
+                        {
+                            lblDetalhesReserva.Text += "Erro ao construir o ID do assento: " + ex.Message + " ";
+                            mostrarErros.Visible = true;
+                        }
+                    }
+                }
+            }
+
+            catch (Exception ex)
+            {
+                lblDetalhesReserva.Text += $"Erro ao obter assentos: {ex.Message}. ";
+                mostrarErros.Visible = true;
+            }
+
+            return idsSelecionados;
+        }
+        private List<string> ObterAssentosSelecionados()
+        {
+            List<string> assentosSelecionados = new List<string>();
+
+            try
+            {
+                //Verificar em cada controle no Panel -> panelAssentos
+                foreach (Control control in panelAssentos.Controls)
+                {                  
+                        //Verifica se o controle for um CheckBox e estiver selecionado
+                        if (control is CheckBox checkBox && checkBox.Checked)
+                        {
+                            string textoAssento = checkBox.Text; //Pega o Text que está no checkbox selecionado
+
+                            char fileira = textoAssento[0]; //Fileiras "A", "B", ou "C"
+                            int numeroAssento = int.Parse(textoAssento.Substring(1)); //Número da fileira
+
+                            try
+                            {
+                                string assento = $"{fileira}{numeroAssento}";
+                                assentosSelecionados.Add(assento);
+                            }
+                            catch (Exception ex)
+                            {
+                                lblDetalhesReserva.Text += "Erro ao construir a numeração dos assentos: " + ex.Message + " ";
+                                mostrarErros.Visible = true;
+                            }
+                      }
+                }
+            }
+            catch (Exception ex)
+            {
+                lblDetalhesReserva.Text += $"Erro ao obter assentos: {ex.Message}. ";
+                mostrarErros.Visible = true;
+            }
+
+            return assentosSelecionados;
+        }  
+
         private async Task MudarDisponibilidadeAssento(int assentoId, bool disponivel)
         {
             try
             {
+                //Endpoint da API para atualizar a disponibilidade do assento 
                 string apiUrl = $"http://localhost:5109/api/Assento/AtualizarDisponibilidade/{assentoId}?disponivel={disponivel.ToString().ToLower()}";
 
                 using (HttpClient httpClient = new HttpClient())
@@ -244,24 +283,25 @@ namespace SistemaReservaIngressos.Views
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 lblDetalhesReserva.Text = "Ocorreu um erro ao atualizar a disponibilidade do assento: " + ex.Message;
-                lblDetalhesReserva.Visible = true;
+                mostrarErros.Visible = true;
             }
         }
 
         private async Task<bool> VerificarDisponibilidadeAssentos(int assentoId)
         {
+            //Endpoint da API para buscar o assento por assentoId
             string apiUrl = $"http://localhost:5109/api/Assento/BuscarAssento/{assentoId}";
 
-            using(HttpClient httpClient = new HttpClient())
+            using (HttpClient httpClient = new HttpClient())
             {
                 try
                 {
                     HttpResponseMessage response = await httpClient.GetAsync(apiUrl);
 
-                    if(response.IsSuccessStatusCode)
+                    if (response.IsSuccessStatusCode)
                     {
                         // Deserializa a resposta JSON para um objeto Assento
                         var assento = await response.Content.ReadAsAsync<Assentos>();
@@ -273,7 +313,7 @@ namespace SistemaReservaIngressos.Views
                         throw new Exception("Erro ao verificar a disponibilidade do assento.");
                     }
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     throw new Exception("Erro na verificação do assento:", ex);
                 }
@@ -281,6 +321,7 @@ namespace SistemaReservaIngressos.Views
         }
         private async Task CarregarAssentosDisponiveis(string horarioId)
         {
+            //Endpoint da API para buscar os assentos por horarioId
             string apiUrl = $"http://localhost:5109/api/Assento/BuscarAssentosPorHorario/{horarioId}";
 
             using (HttpClient httpClient = new HttpClient())
@@ -294,21 +335,26 @@ namespace SistemaReservaIngressos.Views
                         // Deserializa a resposta JSON para uma lista de Assentos
                         List<Assentos> assentos = await response.Content.ReadAsAsync<List<Assentos>>();
 
-                        // Itera sobre os controles de assento no painel
-                        foreach (Control control in panelAssentos.Controls)
+                        if (int.TryParse(horarioId, out int horarioIdInt))
                         {
-                            if (control is CheckBox checkBox)
+                            // Itera sobre os controles de assento no painel
+                            foreach (Control control in panelAssentos.Controls)
                             {
-                                string textoAssento = checkBox.Text;
-                                char fileira = textoAssento[0];
-                                int numeroAssento = int.Parse(textoAssento.Substring(1));
-
-                                var assento = assentos.FirstOrDefault(a => a.Fileira == fileira && a.Numero == numeroAssento);
-
-                                // Atualiza o CheckBox de acordo com a disponibilidade do assento
-                                if (assento != null)
+                                if (control is CheckBox checkBox)
                                 {
-                                    checkBox.Enabled = assento.Disponivel;
+                                    string id = horarioId;
+                                    string textoAssento = checkBox.Text;
+                                    char fileira = textoAssento[0];
+                                    int numeroAssento = int.Parse(textoAssento.Substring(1));
+
+                                    //Busca um assento correspondente na lista de assentos obtida da API
+                                    var assento = assentos.FirstOrDefault(a => a.Fileira == fileira && a.Numero == numeroAssento && a.HorarioId == horarioIdInt);
+
+                                    // Atualiza o CheckBox de acordo com a disponibilidade do assento
+                                    if (assento != null)
+                                    {
+                                        checkBox.Enabled = assento?.Disponivel ?? false;
+                                    }
                                 }
                             }
                         }
@@ -317,41 +363,27 @@ namespace SistemaReservaIngressos.Views
                 catch (Exception ex)
                 {
                     lblDetalhesReserva.Text = "Erro ao carregar a disponibilidade dos assentos: " + ex.Message;
-                    lblDetalhesReserva.Visible = true;
+                    mostrarErros.Visible = true;
                 }
             }
         }
+
         private async Task RealizarCompra(int horarioId)
-        {
+        {          
             try
             {
                 List<int> idsAssentosSelecionados = await ObterIdAssentosSelecionados(horarioId);
                 List<string> assentosSelecionados = ObterAssentosSelecionados();
 
+                //Verifica se algum assento foi selecionado
                 if (idsAssentosSelecionados.Count == 0)
                 {
                     lblDetalhesReserva.Text = "Nenhum assento selecionado.";
-                    lblDetalhesReserva.Visible = true;
+                    mostrarErros.Visible = true;
                     return;
                 }
 
-                //Verifica a disponibilidade de cada assento selecionado
-                List<int> assentosIndisponiveis = new List<int>();
-                foreach(int assentoId in idsAssentosSelecionados)
-                {
-                    bool disponivel = await VerificarDisponibilidadeAssentos(assentoId);
-                    if(!disponivel)
-                    {
-                        assentosIndisponiveis.Add(assentoId);
-                    }
-                }
-
-                //Verifica se tem assentos indisponiveis e retorna uma mensagem de quais assentos
-                if (assentosIndisponiveis.Count > 0)
-                {
-                    lblDetalhesReserva.Text = $"Os seguintes assentos estão indisponiveis: {string.Join(",", assentosIndisponiveis)}";
-                }
-
+                //Cria um objeto ReservaRequest com os dados da reserva
                 ReservaRequest reservaRequest = new ReservaRequest
                 {
                     HorarioId = horarioId,
@@ -360,6 +392,7 @@ namespace SistemaReservaIngressos.Views
                     Confirmado = true
                 };
 
+                //Endpoint da API para adicionar a nova reserva
                 string apiUrl = $"http://localhost:5109/api/Reserva/AdicionarReserva";
 
                 using (HttpClient httpClient = new HttpClient())
@@ -370,11 +403,12 @@ namespace SistemaReservaIngressos.Views
                     {
                         var responseBody = await response.Content.ReadAsStringAsync();
 
-                        //Extrair o número da string da resposta da API
+                        //Extrair o número do id da reserva da resposta da API
                         var pegarReservaId = Regex.Match(responseBody, @"\d+");
 
                         if (pegarReservaId.Success && int.TryParse(pegarReservaId.Value, out int reservaId))
                         {
+                            // Adiciona detalhes da reserva para cada assento selecionado
                             foreach (int assentoId in idsAssentosSelecionados)
                             {
                                 var detalheReserva = new
@@ -383,6 +417,7 @@ namespace SistemaReservaIngressos.Views
                                     AssentoId = assentoId
                                 };
 
+                                //Endpoint da API para adicionar os detalhes da reserva
                                 string detalhesUrl = $"http://localhost:5109/api/DetalhesReserva/AdicionarDetalhesReserva";
                                 HttpResponseMessage detalheResponse = await httpClient.PostAsJsonAsync(detalhesUrl, detalheReserva);
 
@@ -393,24 +428,23 @@ namespace SistemaReservaIngressos.Views
 
                                 // Atualiza a disponibilidade do assento para false
                                 await MudarDisponibilidadeAssento(assentoId, false);
-                                
                             }
 
+                            //Preencher os campos a ser passado na url para a página de confirmação da reserva
                             decimal precoPorAssento = decimal.Parse(lblPreco.Text.Replace("R$", "").Trim());
                             decimal valorTotal = precoPorAssento * idsAssentosSelecionados.Count;
+
                             var horarioSelecionado = DropDownListHorarios.SelectedItem.Text;
+                            string horarioData = horarioSelecionado.ToString();
+                            string assentos = string.Join(", ", assentosSelecionados);
+                            string nome = txtNome.Text;
+                            string filme = lblTitulo.Text;
+                            string sala = lblSala.Text;
+                            string idReserva = reservaId.ToString();
 
-                            lblDetalhesReserva.Text = $"Reserva confirmada!\n" +
-                                             $"ID da Reserva: {reservaId}\n" +
-                                             $"Assento Id: {string.Join(", ", idsAssentosSelecionados)}\n" +
-                                             $"Nome: {txtNome.Text}\n" +
-                                             $"Data e Horário: {horarioSelecionado}\n" +
-                                             $"Valor Total: R${valorTotal}\n" +
-                                             $"Assentos selecionados: {string.Join(", ", assentosSelecionados)}\n" +
-                                             $"Filme: {lblTitulo.Text}"; 
-
-                            lblDetalhesReserva.Visible = true;
-                            lblDetalhesTitulo.Visible = true;
+                            //Redireciona para a outra página
+                            string url = $"ConfirmacaoReserva.aspx?idReserva={idReserva}&nome={nome}&horario={horarioData}&preco={valorTotal}&assentos={assentos}&filme={filme}&sala={sala}";
+                            Response.Redirect(url);                        
                         }
                         else
                         {
@@ -422,7 +456,7 @@ namespace SistemaReservaIngressos.Views
             catch (Exception ex)
             {
                 lblDetalhesReserva.Text = "Ocorreu um erro: " + ex.Message;
-                lblDetalhesReserva.Visible = true;
+                mostrarErros.Visible = true;
             }
         }
 
@@ -432,7 +466,7 @@ namespace SistemaReservaIngressos.Views
             if (string.IsNullOrEmpty(txtNome.Text))
             {
                 lblDetalhesReserva.Text = "Por favor, digite seu nome.";
-                lblDetalhesReserva.Visible = true;
+                mostrarErros.Visible = true;
                 return;
             }
 
@@ -441,18 +475,18 @@ namespace SistemaReservaIngressos.Views
             if (!int.TryParse(DropDownListHorarios.SelectedValue, out horarioId))
             {
                 lblDetalhesReserva.Text = "Horário inválido selecionado.";
-                lblDetalhesReserva.Visible = true;
+                mostrarErros.Visible = true;
                 return;
             }
             try
             {
-                // Executa a seleção dos assentos
+                // Executa o método de realizar compra
                 await RealizarCompra(horarioId);
             }
             catch (Exception ex)
             {
                 lblDetalhesReserva.Text = $"Erro: {ex.Message}";
-                lblDetalhesReserva.Visible = true;
+                mostrarErros.Visible = true;
             }
         }
     }

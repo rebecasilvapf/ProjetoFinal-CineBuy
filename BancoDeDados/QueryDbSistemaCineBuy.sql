@@ -117,11 +117,14 @@ FROM Horarios h
 CROSS JOIN @Fileiras f --Combina cada horário com todas as fileiras.
 CROSS JOIN @Numeros n; -- Combina cada horário e fileira com todos os números de assento.
 
+UPDATE Assentos SET Disponivel = 0 WHERE AssentoId = 3
+UPDATE Assentos SET Disponivel = 0 WHERE AssentoId = 28
+
 SELECT * FROM Assentos
 
 INSERT INTO Reservas (HorarioId, Cliente, DataReserva, Confirmado)
 VALUES
-(2, 'Bruna Andrade', '2024-09-13 22:22:00:000', 'true' ),
+(6, 'Bruna Andrade', '2024-09-13 22:22:00:000', 'true' ),
 (4, 'Paulo Ferreira', '2024-09-13 21:22:00:000', 'true' );
 
 SELECT * FROM Reservas
@@ -129,7 +132,7 @@ SELECT * FROM Reservas
 INSERT INTO DetalhesReserva(ReservaId, AssentoId)
 VALUES
 (1, 3),
-(2, 4);
+(2, 28);
 
 SELECT * FROM DetalhesReserva
 
@@ -160,9 +163,4 @@ INNER JOIN
 ORDER BY
     r.ReservaId;
 
-
-
-
-
-
-
+	
