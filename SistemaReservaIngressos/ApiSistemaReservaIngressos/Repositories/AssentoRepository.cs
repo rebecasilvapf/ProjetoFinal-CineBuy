@@ -62,7 +62,7 @@ namespace ApiSistemaReservaIngressos.Repositories
                     Disponivel = request.Disponivel
                 };
               
-                return _dbSession.Connection.QuerySingle<int>(sql, param);
+                return _dbSession.Connection.Execute(sql, param);
             }
             catch (SqlException ex)
             {

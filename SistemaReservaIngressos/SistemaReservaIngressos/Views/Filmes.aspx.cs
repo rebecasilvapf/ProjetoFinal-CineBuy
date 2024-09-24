@@ -82,19 +82,18 @@ namespace SistemaReservaIngressos
                         Label lblErro = new Label
                         {
                             Text = "Erro ao carregar os filmes.",
-                            CssClass = "error-message" // Classe CSS para a mensagem de erro
+                            CssClass = "error-message" ,
                         };
                         filmesContainer.Controls.Add(lblErro); // Adiciona a mensagem ao container principal
                     }
                 }
             }
             catch (Exception ex)
-            {
-                // Tratamento de erro genérico, exibe uma mensagem de erro
+            {               
                 Label lblErro = new Label
                 {
                     Text = $"Erro ao carregar os filmes: {ex.Message}",
-                    CssClass = "error-message" // Classe CSS para a mensagem de erro
+                    CssClass = "error-message" 
                 };
                 filmesContainer.Controls.Add(lblErro); // Adiciona a mensagem ao container principal
             }
