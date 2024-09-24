@@ -35,9 +35,9 @@ O **CineBuy** é um sistema desenvolvido como projeto final do curso Academia.Ne
    - [x] 18/09: Testes de usabilidade e responsividade da interface.
 
 4. **Desenvolvimento do Backend (19/09 - 21/09)**
-   - [ ] 19/09: Desenvolvimento da lógica de reservas, compra de ingressos e cancelamentos.
-   - [ ] 20/09: Integração entre interface, backend e banco de dados.
-   - [ ] 21/09: Ajustes e testes da lógica do backend.
+   - [x] 19/09: Desenvolvimento da lógica de reservas, compra de ingressos e cancelamentos.
+   - [x] 20/09: Integração entre interface, backend e banco de dados.
+   - [x] 21/09: Ajustes e testes da lógica do backend.
 
 5. **Criação da Documentação (22/09 - 23/09)**
    - [ ] 22/09: Documentação do sistema e da API.
