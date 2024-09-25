@@ -38,7 +38,7 @@
     <div class="container-reserva">
         <div class="reserva-horario">
             <asp:Label ID="lblHorario" CssClass="horario-label" runat="server" Text="Data e Horário: " ></asp:Label>
-            <asp:DropDownList ID="DropDownListHorarios" runat="server" CssClass="dropdown-horario" AutoPostBack="True" OnSelectedIndexChanged="ddlHorarios_SelectedIndexChanged"></asp:DropDownList>         
+            <asp:DropDownList ID="DropDownListHorarios" runat="server" CssClass="dropdown-horario" AutoPostBack="True" OnSelectedIndexChanged="ddlHorarios_MudancaDeIndice"></asp:DropDownList>         
         </div>      
         <asp:Panel ID="panelAssentos" runat="server" CssClass="reserva-assentos" Visible="false">
         <div class="reserva-assentos">

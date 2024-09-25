@@ -104,13 +104,14 @@ namespace SistemaReservaIngressos.Views
                     }
                 }
                 catch (Exception ex)
-                {                    
-                    throw new Exception("Erro ao carregar horários do filme:", ex);
+                {
+                    lblDetalhesReserva.Text = $"Erro ao carregar horários do filme: {ex.Message}";
+                    mostrarErros.Visible = true;
                 }
             }
         }
 
-        protected async void ddlHorarios_SelectedIndexChanged(object sender, EventArgs e)
+        protected async void ddlHorarios_MudancaDeIndice(object sender, EventArgs e)
         {
             // Captura o horarioId selecionado no DropDownList
             string horarioId = DropDownListHorarios.SelectedValue;
@@ -120,7 +121,7 @@ namespace SistemaReservaIngressos.Views
             await CarregarAssentos(horarioId);
             await AtualizarSala(horarioId);
         }  
-
+        
         private async Task<string> AtualizarSala(string horarioId)
         {
             //Endpoint da API para buscar os horarios referente ao horarioId

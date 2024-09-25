@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{71808FA0-E673-437A-96B9-E30F669632B5}|SistemaReservaIngressos\\SistemaReservaIngressos.csproj|c:\\users\\rebec\\downloads\\sistemareservaingressos-cinebuy\\sistemareservaingressos\\sistemareservaingressos\\views\\comprarfilme.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71808FA0-E673-437A-96B9-E30F669632B5}|SistemaReservaIngressos\\SistemaReservaIngressos.csproj|solutionrelative:sistemareservaingressos\\views\\comprarfilme.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71808FA0-E673-437A-96B9-E30F669632B5}|SistemaReservaIngressos\\SistemaReservaIngressos.csproj|c:\\users\\rebec\\downloads\\sistemareservaingressos-cinebuy\\sistemareservaingressos\\sistemareservaingressos\\views\\comprarfilme.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{71808FA0-E673-437A-96B9-E30F669632B5}|SistemaReservaIngressos\\SistemaReservaIngressos.csproj|solutionrelative:sistemareservaingressos\\views\\comprarfilme.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{71808FA0-E673-437A-96B9-E30F669632B5}|SistemaReservaIngressos\\SistemaReservaIngressos.csproj|c:\\users\\rebec\\downloads\\sistemareservaingressos-cinebuy\\sistemareservaingressos\\sistemareservaingressos\\views\\filmes.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{71808FA0-E673-437A-96B9-E30F669632B5}|SistemaReservaIngressos\\SistemaReservaIngressos.csproj|solutionrelative:sistemareservaingressos\\views\\filmes.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72E61C9A-F5A0-4F95-B2D7-BE6EF91ADC1D}|ApiSistemaReservaIngressos\\ApiSistemaReservaIngressos.csproj|c:\\users\\rebec\\downloads\\sistemareservaingressos-cinebuy\\sistemareservaingressos\\apisistemareservaingressos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{72E61C9A-F5A0-4F95-B2D7-BE6EF91ADC1D}|ApiSistemaReservaIngressos\\ApiSistemaReservaIngressos.csproj|solutionrelative:apisistemareservaingressos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,32 +31,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ComprarFilme.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Views\\ComprarFilme.aspx.cs",
-              "RelativeDocumentMoniker": "SistemaReservaIngressos\\Views\\ComprarFilme.aspx.cs",
-              "ToolTip": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Views\\ComprarFilme.aspx.cs",
-              "RelativeToolTip": "SistemaReservaIngressos\\Views\\ComprarFilme.aspx.cs",
-              "ViewState": "AgIAAAoBAAAAAAAAAADwv3cAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T01:18:45.165Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ComprarFilme.aspx",
-              "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Views\\ComprarFilme.aspx",
-              "RelativeDocumentMoniker": "SistemaReservaIngressos\\Views\\ComprarFilme.aspx",
-              "ToolTip": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Views\\ComprarFilme.aspx",
-              "RelativeToolTip": "SistemaReservaIngressos\\Views\\ComprarFilme.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-09-25T01:18:43.28Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Filmes.aspx",
               "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\SistemaReservaIngressos\\Views\\Filmes.aspx",
               "RelativeDocumentMoniker": "SistemaReservaIngressos\\Views\\Filmes.aspx",
@@ -68,7 +38,20 @@
               "RelativeToolTip": "SistemaReservaIngressos\\Views\\Filmes.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-09-25T01:18:07.988Z",
+              "WhenOpened": "2024-09-25T15:24:20.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\ApiSistemaReservaIngressos\\appsettings.json",
+              "RelativeDocumentMoniker": "ApiSistemaReservaIngressos\\appsettings.json",
+              "ToolTip": "C:\\Users\\rebec\\Downloads\\SistemaReservaIngressos-CineBuy\\SistemaReservaIngressos\\ApiSistemaReservaIngressos\\appsettings.json",
+              "RelativeToolTip": "ApiSistemaReservaIngressos\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-19T01:29:47.045Z",
               "EditorCaption": ""
             }
           ]
