@@ -8,7 +8,7 @@ O **CineBuy** é um sistema de reserva de ingressos para sessões de filmes que 
 - Selecionar horários disponíveis
 - Reservar assentos
 - Gerar confirmações de reserva
-- Cancelar reservas
+- Cancelar reserva
 
 ## Funcionalidades
 
@@ -72,6 +72,20 @@ Antes de executar o projeto, certifique-se de ter os seguintes itens instalados:
    - Pressione `F5` para compilar e executar o projeto.
    - **Observação:** Certifique-se de que os dois projetos estão configurados para executar juntos.
 
+ ## Instalação de Pacotes NuGet
+
+O projeto utiliza pacotes NuGet que devem ser instalados. Para instalar os pacotes necessários:
+
+1. **Abra o Projeto no Visual Studio:**
+   - Clique com o botão direito do mouse na Solução e selecione "Gerenciar Pacotes NuGet para a Solução" no Visual Studio.
+
+2. **Instale os Pacotes NuGet:**
+   - Procure e instale os seguintes pacotes :
+     - `Dapper`
+     - `System.Data.SqlClient `
+     - `System.Net.Http`
+     - `System.Net.Http.Formatting.Extension `
+
 ## Documentação
 
 A documentação completa pode ser encontrada no arquivo Documentação-CineBuy – Sistema de Reserva de Ingressos de Filmes
@@ -82,4 +96,3 @@ Para dúvidas ou suporte, entre em contato:
 
 - **Nome:** Rebeca Paulino Feitosa Silva
 - **E-mail:** rebeca.paulino.df@gmail.com
-
