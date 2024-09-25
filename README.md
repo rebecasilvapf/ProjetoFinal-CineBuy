@@ -1,47 +1,85 @@
-
-# CineBuy - Sistema de Aplicação de Reserva de Ingressos para Sessões de Filmes
+# CineBuy - Sistema de Reserva de Ingressos para Sessões de Filmes
 
 ## Descrição
-O **CineBuy** é um sistema desenvolvido como projeto final do curso Academia.Net. Seu objetivo é permitir que os usuários possam visualizar filmes em cartaz, reservar assentos, comprar ingressos para sessões de cinema online, gerar confirmações de reserva e realizar cancelamentos.
 
-## Funcionalidades:
-- **Visualizar Filmes**: Exibição dos filmes disponíveis e seus horários.
-- **Reservar Assentos**: Escolha e reserva de assentos nas sessões.
-- **Comprar Ingressos Online**: Finalização da compra diretamente no sistema.
-- **Gerar Confirmação**: Geração de comprovante de reserva.
-- **Cancelamento**: Opção de cancelar reservas.
+O **CineBuy** é um sistema de reserva de ingressos para sessões de filmes que permite aos usuários:
 
-## Estrutura da API:
-1. **Filmes**: CRUD de filmes (criar, listar, atualizar, deletar).
-2. **Sessões**: Gerenciamento dos horários de exibição.
-3. **Assentos**: Controle de disponibilidade e reserva.
-4. **Reservas**: Manipulação e controle das reservas feitas.
-5. **Detalhes da Reserva**: Consulta completa de informações sobre reservas realizadas.
+- Visualizar filmes disponíveis
+- Selecionar horários disponíveis
+- Reservar assentos
+- Gerar confirmações de reserva
+- Cancelar reservas
 
-## Roteiro de Desenvolvimento:
-1. **Configuração Inicial e Banco de Dados (10/09 - 12/09)**
-   - [x] 10/09: Configuração do ambiente e criação do banco de dados.
-   - [x] 11/09: Definição e criação das tabelas de filmes, sessões, reservas, etc.
-   - [x] 12/09: Testes iniciais de conexão e operações básicas no banco de dados.
-   
-2. **Criação da API (13/09 - 15/09)**
-   - [x] 13/09: Estruturação da API (endpoints para listar filmes, sessões, reservas, etc.).
-   - [x] 14/09: Implementação das funcionalidades da API com integração ao banco de dados.
-   - [x] 15/09: Testes da API e ajustes.
+## Funcionalidades
 
-3. **Desenvolvimento da Interface de Usuário (16/09 - 18/09)**
-   - [x] 16/09: Criação das telas principais (visualização de filmes, horários, assentos disponíveis).
-   - [x] 17/09: Implementação da lógica de reservas e exibição de confirmações.
-   - [x] 18/09: Testes de usabilidade e responsividade da interface.
+- 🎬 **Visualização de Filmes**: Veja todos os filmes em cartaz.
+- ⏰ **Seleção de Horários**: Escolha horários disponíveis para os filmes.
+- 🪑 **Reserva de Assentos**: Escolha e reserve seus assentos.
+- 📩 **Geração de Confirmações**: Receba confirmação imediata da sua reserva.
+- ❌ **Cancelamento de Reservas**: Cancele suas reservas se necessário.
 
-4. **Desenvolvimento do Backend (19/09 - 21/09)**
-   - [x] 19/09: Desenvolvimento da lógica de reservas, compra de ingressos e cancelamentos.
-   - [x] 20/09: Integração entre interface, backend e banco de dados.
-   - [x] 21/09: Ajustes e testes da lógica do backend.
+## Tecnologias Utilizadas
 
-5. **Criação da Documentação (22/09 - 23/09)**
-   - [ ] 22/09: Documentação do sistema e da API.
+- 🖥️ **C#**
+- 🌐 **ASP.NET**
+- 📋 **ASP.NET Web Forms**
+- 🔗 **API Web ASP.NET Core**
+- 🔍 **Dapper**
+- 💾 **SQL Server**
+- 🌍 **HTML/CSS**
 
-6. **Preparação e Apresentação Final (24/09 - 25/09)**
-   - [ ] 24/09: Testes finais e simulação da apresentação.
-   - [ ] 25/09: Apresentação final.
+## Pré-requisitos
+
+Antes de executar o projeto, certifique-se de ter os seguintes itens instalados:
+
+- [SQL Server Management Studio (SSMS)](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms)
+- [Visual Studio 2022](https://visualstudio.microsoft.com/)
+
+## Configuração do Banco de Dados
+
+1. **Executar Scripts SQL:**
+   - Navegue até a pasta `BancodeDados` no diretório do projeto.
+   - Encontre o arquivo `QueryDbSistemaCineBuy` que contém as consultas para criar e preencher as tabelas necessárias.
+   - Execute o arquivo `QueryDbSistemaCineBuy` no SQL Server Management Studio (SSMS) para criar a estrutura do banco de dados.
+
+2. **Atualizar a String de Conexão:**
+   - Abra o arquivo `appsettings.json` no seu projeto que se encontra no projeto `ApiSistemaReservaIngressos`.
+   - Localize a seção `ConnectionStrings`.
+   - Atualize a string de conexão para apontar para a sua instância do SQL Server.
+
+   ```json
+   "ConnectionStrings": {
+     "conexao": "Server=SeuServidor;Database=DbSistemaCineBuy;Trusted_Connection=True;"
+   }
+   ```
+
+   **Certifique-se de substituir a propriedade `Server` pelo nome do servidor da sua máquina.**
+
+## Como Rodar o Projeto
+
+1. **Clone o Repositório:**
+
+   ```bash
+   git clone https://github.com/rebecasilvapf/ProjetoFinal-CineBuy.git
+   cd ProjetoFinal-CineBuy
+   ```
+
+2. **Abra o Projeto no Visual Studio:**
+   - Abra o Visual Studio e selecione "Abrir projeto ou solução".
+   - Navegue até o diretório clonado e selecione o arquivo `SistemaReservaIngressos.sln`.
+
+3. **Executar o Projeto:**
+   - Pressione `F5` para compilar e executar o projeto.
+   - **Observação:** Certifique-se de que os dois projetos estão configurados para executar juntos.
+
+## Documentação
+
+A documentação completa pode ser encontrada no arquivo Documentação-CineBuy – Sistema de Reserva de Ingressos de Filmes
+
+## Contato
+
+Para dúvidas ou suporte, entre em contato:
+
+- **Nome:** Rebeca Paulino Feitosa Silva
+- **E-mail:** rebeca.paulino.df@gmail.com
+
