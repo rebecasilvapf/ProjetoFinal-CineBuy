@@ -117,7 +117,7 @@ namespace SistemaReservaIngressos.Views
 
             // Chama o método para carregar os assentos e sala de acordo com o horário
             panelAssentos.Visible = true;
-            await CarregarAssentosDisponiveis(horarioId);
+            await CarregarAssentos(horarioId);
             await AtualizarSala(horarioId);
         }  
 
@@ -204,7 +204,7 @@ namespace SistemaReservaIngressos.Views
                         string textoAssento = checkBox.Text; //Pega o Text que está no checkbox selecionado
 
                         char fileira = textoAssento[0]; //Fileiras "A", "B" ou "C"
-                        int numeroAssento = int.Parse(textoAssento.Substring(1)); //Número da fileira
+                        int numeroAssento = int.Parse(textoAssento.Substring(1)); //Número da assento
                         try
                         {
                             int idAssento = await ConstruirIdAssento(fileira, numeroAssento, horarioId);
@@ -212,7 +212,7 @@ namespace SistemaReservaIngressos.Views
                         }
                         catch (Exception ex)
                         {
-                            lblDetalhesReserva.Text += "Erro ao construir o ID do assento: " + ex.Message + " ";
+                            lblDetalhesReserva.Text += "Erro ao obter o ID do assento: " + ex.Message + " ";
                             mostrarErros.Visible = true;
                         }
                     }
@@ -242,7 +242,7 @@ namespace SistemaReservaIngressos.Views
                             string textoAssento = checkBox.Text; //Pega o Text que está no checkbox selecionado
 
                             char fileira = textoAssento[0]; //Fileiras "A", "B", ou "C"
-                            int numeroAssento = int.Parse(textoAssento.Substring(1)); //Número da fileira
+                            int numeroAssento = int.Parse(textoAssento.Substring(1)); //Número do assento
 
                             try
                             {
@@ -290,36 +290,7 @@ namespace SistemaReservaIngressos.Views
             }
         }
 
-        private async Task<bool> VerificarDisponibilidadeAssentos(int assentoId)
-        {
-            //Endpoint da API para buscar o assento por assentoId
-            string apiUrl = $"http://localhost:5109/api/Assento/BuscarAssento/{assentoId}";
-
-            using (HttpClient httpClient = new HttpClient())
-            {
-                try
-                {
-                    HttpResponseMessage response = await httpClient.GetAsync(apiUrl);
-
-                    if (response.IsSuccessStatusCode)
-                    {
-                        // Deserializa a resposta JSON para um objeto Assento
-                        var assento = await response.Content.ReadAsAsync<Assentos>();
-
-                        return assento.Disponivel;
-                    }
-                    else
-                    {
-                        throw new Exception("Erro ao verificar a disponibilidade do assento.");
-                    }
-                }
-                catch (Exception ex)
-                {
-                    throw new Exception("Erro na verificação do assento:", ex);
-                }
-            }
-        }
-        private async Task CarregarAssentosDisponiveis(string horarioId)
+        private async Task CarregarAssentos(string horarioId)
         {
             //Endpoint da API para buscar os assentos por horarioId
             string apiUrl = $"http://localhost:5109/api/Assento/BuscarAssentosPorHorario/{horarioId}";
@@ -342,7 +313,7 @@ namespace SistemaReservaIngressos.Views
                             {
                                 if (control is CheckBox checkBox)
                                 {
-                                    string id = horarioId;
+                                    int id = horarioIdInt;
                                     string textoAssento = checkBox.Text;
                                     char fileira = textoAssento[0];
                                     int numeroAssento = int.Parse(textoAssento.Substring(1));
