@@ -16,7 +16,7 @@ O **CineBuy** é um sistema de reserva de ingressos para sessões de filmes que 
 - ⏰ **Seleção de Horários**: Escolha horários disponíveis para os filmes.
 - 🪑 **Reserva de Assentos**: Escolha e reserve seus assentos.
 - 📩 **Geração de Confirmações**: Receba confirmação imediata da sua reserva.
-- ❌ **Cancelamento de Reservas**: Cancele suas reservas se necessário.
+- ❌ **Cancelamento de Reservas**: Cancele sua reserva se necessário.
 
 ## Tecnologias Utilizadas
 
